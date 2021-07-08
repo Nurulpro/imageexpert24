@@ -3,21 +3,14 @@ $subscriber=DB::table('subscriber')->get();
 
 @endphp
 
-@extends('admin.adminlayouts')
+@extends('dashboard')
 @section('admin_content')
 <!-- ########## START: MAIN PANEL ########## -->
 <div class="sl-mainpanel">
-  <div class="sl-pagebody">
-    <div class="sl-page-title">
-      <h5>brand Table</h5>
-
-
-
-
-      <div class="card pd-20 pd-sm-40 mg-t-50">
-        <h6 class="card-body-title">brand List
-
-          <a href="" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal" data-target="#modaldemo3">Subscriber Add</a>
+ 
+  
+      <div class="card pd-10 pd-sm-40 mg-t-50">
+        <h6 class="card-body-title">Subscriber<a href="" class="btn btn-sm btn-warning" style="float: right;" data-toggle="modal" data-target="#modaldemo3">Add Subscriber</a>
         </h6>
 
 

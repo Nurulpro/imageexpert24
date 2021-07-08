@@ -55,6 +55,10 @@ Route::get('/SubscriberList', function () {
     return view('admin.subscriber');
 });
 
+Route::get('/ContactForms', function () {
+    return view('admin.ContactForms');
+});
+
 Route::get('/freetrial', function () {
     return view('freetrial');
 });

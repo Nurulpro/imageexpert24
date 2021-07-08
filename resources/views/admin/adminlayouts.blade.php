@@ -178,13 +178,6 @@
 
 
 
-
-
-
-
-
-
-
   <script src="{{asset('public/backend/lib/jquery/jquery.js')}}"></script>
   <script src="{{asset('public/backend/lib/popper.js/popper.js')}}"></script>
   <script src="{{asset('public/backend/lib/bootstrap/bootstrap.js')}}"></script>
