@@ -460,7 +460,7 @@
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{{('public/frontend/img/spin.svg')}}" />
       </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;">
-        <div style="background-color: ;">
+        <div>
           <img data-u="image" style="opacity:0.8;" data-src="{{('public/frontend/img/image-manipulation.jpg')}}" />
 
 

@@ -174,6 +174,8 @@
   </div><!-- tab-content -->
   </div><!-- sl-sideright -->
   <!-- ########## END: RIGHT PANEL ########## --->
+
+  
   @yield('admin_content')
 
 
