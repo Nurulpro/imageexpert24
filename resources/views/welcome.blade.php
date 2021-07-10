@@ -1261,7 +1261,17 @@
             <h3 class="text-white" class="text-center">Contact Us With imageexpert24.com (24/7)</h3>
           </div>
 
-
+          
+                    <div class="card-body">
+                        
+                        @if(Session::has('success'))
+                        <div class="alert alert-success">
+                            {{ Session::get('success') }}
+                            @php
+                                Session::forget('success');
+                            @endphp
+                        </div>
+                        @endif
           <form method="POST" action="{{ url('storecontactus') }}">
 
             {{ csrf_field() }}

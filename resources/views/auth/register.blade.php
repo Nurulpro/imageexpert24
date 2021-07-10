@@ -1,7 +1,10 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+          <img style="height: 120px" src="{{ asset('public/frontend/assets/img/logo3.png') }}" />
+            <h1 class="font-semibold text-xl text-gray-1200 leading-tight">
+            {{ __('Imageexpert24') }}
+        </h1>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />

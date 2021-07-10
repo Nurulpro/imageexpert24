@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use DB;
 
 class Contactus extends Controller
 {
-    
+
     public function storecontactus(Request $Request)
     {
         $Request->validate([
@@ -17,25 +18,34 @@ class Contactus extends Controller
             'message' => 'required',
         ]);
 
-    
-        $data=array();   
 
-        $data['name']=$Request->name;
-        $data['email']=$Request->email;
-        $data['phone']=$Request->phone;
-        $data['subject']=$Request->subject;
-        $data['message']=$Request->message;
-        
+        $data = array();
+
+        $data['name'] = $Request->name;
+        $data['email'] = $Request->email;
+        $data['phone'] = $Request->phone;
+        $data['subject'] = $Request->subject;
+        $data['message'] = $Request->message;
+
         DB::table('contactus')->insert($data);
-        
-        $notification=array(
-            'messege'=>'Thanks for contact us!',
-            'alert-type'=>'success'
-             );
-           return Redirect()->back()->with($notification);
 
+        $notification = array(
+            'messege' => 'Thanks for contact us!',
+            'alert-type' => 'success'
+        );
+        return Redirect()->back()->with($notification);
 
-           
+        \Mail::send('contactMail', array(
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'phone' => $data['phone'],
+            'subject' => $data['subject'],
+            'message' => $data['message'],
+        ), function ($message) use ($Request) {
+            $message->from($Request->email);
+            $message->to('nurulpro24@gmail.com', 'Admin')->subject($Request->get('subject'));
+        });
+
+        return redirect()->back()->with(['success' => 'Contact Form Submit Successfully']);
     }
-
 }
