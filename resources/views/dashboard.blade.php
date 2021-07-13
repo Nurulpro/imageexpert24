@@ -36,6 +36,7 @@
 
 <body>
 
+ 
 
   <!-- ########## START: LEFT PANEL ########## -->
   <div class="sl-logo"><a href=""><i class="icon ion-android-star-outline"></i>imageexpert24</a></div>
@@ -123,10 +124,8 @@
 
   <!-- ########## START: HEAD PANEL ########## -->
 
-
-
-
   
+
  <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">

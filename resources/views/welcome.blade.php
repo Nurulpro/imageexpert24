@@ -106,7 +106,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="{{URL::to('freetrial') }}">Free Trial</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Free Trial</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1126,8 +1126,10 @@
     </div>
   </section><!-- End Testimonials Section -->
 
-  {{-- <!-- ======= Team Section ======= -->
-              <section id="team" class="team">
+
+  <!-- ======= Team Section ======= -->
+
+  <!-- <section id="team" class="team">
                 <div class="container">
 
                   <div class="section-title" data-aos="fade-in" data-aos-delay="100">
@@ -1189,7 +1191,9 @@
   </div>
 
   </div>
-  </section><!-- End Team Section --> --}}
+  </section> -->
+
+  <!-- End Team Section -->
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact section-bg">
@@ -1253,89 +1257,111 @@
       <div class="row">
 
         <div class="col-lg-6 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <form method="post" action="" enctype="multipart/form-data">
+        <div class="card-header bg-info">
+                        <h3 class="text-white">Free Trial</h3>
+                    </div>
+    <div class="form-group">
+    <strong>Name:</strong>
+        <input type="text" name="name" class="form-control"  placeholder="Name" required="">
+    </div>
+    <div class="form-group">
+    <strong>Email:</strong>
+        <input type="email" name="email" class="form-control"  placeholder="Email address" required="">
+    </div>
+    <div class="form-group">
+    <strong>Subject:</strong>
+        <input type="text" name="subject" class="form-control"  placeholder="Subject" required="">
+    </div>
+    <div class="form-group">
+    <strong>Message:</strong>
+        <textarea name="message" class="form-control" placeholder="Write your message here" required=""></textarea>
+    </div>
+    <div class="form-group">
+    <strong>Chose Your File:</strong>
+        <input type="file" name="attachment" class="form-control">
+    </div>
+    <div class="form-group text-center">
+                <button class="btn btn-success btn-submit">Submit</button>
+              </div>
+</form>
+
         </div>
 
-        <div class="col-lg-6" style="height: 300px;">
-          <div class="card-header bg-info">
-            <h3 class="text-white" class="text-center">Contact Us With imageexpert24.com (24/7)</h3>
+        <div class="col-lg-6">
+
+          <div class="card-body">
+
+
+            <form method="POST" action="{{ url('storecontactus') }}">
+
+              {{ csrf_field() }}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Enter your Name" value="{{ old('name') }}">
+                    @if ($errors->has('name'))
+                    <span class="text-danger">{{ $errors->first('name') }}</span>
+                    @endif
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <strong>Email:</strong>
+                    <input type="text" name="email" class="form-control" placeholder="Enter your Email" value="{{ old('email') }}">
+                    @if ($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <strong>Phone:</strong>
+                    <input type="text" name="phone" class="form-control" placeholder="Enter your Phone" value="{{ old('phone') }}">
+                    @if ($errors->has('phone'))
+                    <span class="text-danger">{{ $errors->first('phone') }}</span>
+                    @endif
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <strong>Subject:</strong>
+                    <input type="text" name="subject" class="form-control" placeholder="Enter your Subject" value="{{ old('subject') }}">
+                    @if ($errors->has('subject'))
+                    <span class="text-danger">{{ $errors->first('subject') }}</span>
+                    @endif
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <strong>Message:</strong>
+                    <textarea name="message" rows="9" placeholder="Write your details heare" class="form-control">{{ old('message') }}</textarea>
+                    @if ($errors->has('message'))
+                    <span class="text-danger">{{ $errors->first('message') }}</span>
+                    @endif
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group text-center">
+                <button class="btn btn-success btn-submit">Send Message</button>
+              </div>
+            </form>
           </div>
 
-          
-                    <div class="card-body">
-                        
-                        @if(Session::has('success'))
-                        <div class="alert alert-success">
-                            {{ Session::get('success') }}
-                            @php
-                                Session::forget('success');
-                            @endphp
-                        </div>
-                        @endif
-          <form method="POST" action="{{ url('storecontactus') }}">
-
-            {{ csrf_field() }}
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <strong>Name:</strong>
-                  <input type="text" name="name" class="form-control" placeholder="Enter your Name" value="{{ old('name') }}">
-                  @if ($errors->has('name'))
-                  <span class="text-danger">{{ $errors->first('name') }}</span>
-                  @endif
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <strong>Email:</strong>
-                  <input type="text" name="email" class="form-control" placeholder="Enter your Email" value="{{ old('email') }}">
-                  @if ($errors->has('email'))
-                  <span class="text-danger">{{ $errors->first('email') }}</span>
-                  @endif
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <strong>Phone:</strong>
-                  <input type="text" name="phone" class="form-control" placeholder="Enter your Phone" value="{{ old('phone') }}">
-                  @if ($errors->has('phone'))
-                  <span class="text-danger">{{ $errors->first('phone') }}</span>
-                  @endif
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <strong>Subject:</strong>
-                  <input type="text" name="subject" class="form-control" placeholder="Enter your Subject" value="{{ old('subject') }}">
-                  @if ($errors->has('subject'))
-                  <span class="text-danger">{{ $errors->first('subject') }}</span>
-                  @endif
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <strong>Message:</strong>
-                  <textarea name="message" rows="9" placeholder="Write your details heare" class="form-control">{{ old('message') }}</textarea>
-                  @if ($errors->has('message'))
-                  <span class="text-danger">{{ $errors->first('message') }}</span>
-                  @endif
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group text-center">
-              <button class="btn btn-success btn-submit">Send Message</button>
-            </div>
-          </form>
         </div>
 
       </div>
 
-    </div>
+      <div class="col-lg-6 ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1280" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
   </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -1427,10 +1453,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 
-
-
-
-
   </div>
   </div>
   </div>
@@ -1455,25 +1477,6 @@
   <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
 
 
-
-  <script>
-    @if(Session::has('messege'))
-    var type = "{{Session::get('alert-type','info')}}"
-    switch (type) {
-      case 'info':
-        toastr.info("{{ Session::get('messege') }}");
-        break;
-      case 'success':
-        toastr.success("{{ Session::get('messege') }}");
-        break;
-      case 'warning':
-        toastr.warning("{{ Session::get('messege') }}");
-        break;
-      case 'error':
-        toastr.error("{{ Session::get('messege') }}");
-        break;
-    }
-    @endif
   </script>
 
   <script>
