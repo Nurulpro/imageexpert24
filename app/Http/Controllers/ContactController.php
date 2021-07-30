@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
-class Contactus extends Controller
+class ContactController extends Controller
 {
 
     public function storecontactus(Request $Request)
@@ -42,10 +42,13 @@ class Contactus extends Controller
             'subject' => $data['subject'],
             'message' => $data['message'],
         ), function ($message) use ($Request) {
+            
             $message->from($Request->email);
-            $message->to('nurulpro24@gmail.com', 'Admin')->subject($Request->get('subject'));
+            $message->to('nurulpro24@gmail.com')->subject($Request->get('subject'));
         });
 
         return redirect()->back()->with(['success' => 'Contact Form Submit Successfully']);
     }
 }
+
+

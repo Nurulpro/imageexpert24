@@ -97,15 +97,15 @@
             <ul>
               <li><a href="{{URL::to('gallery') }}" target="_blank">Gallery</a></li>
               <li><a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
-              <li><a href="#">Multi Clipping Path</a></li>
+
               <li><a href="#">Image Manipulation</a></li>
               <li><a href="#">Image Retouching</a></li>
-              <li><a href="#">Image Editing</a></li>
-              <li><a href="#">Image Enhancement</a></li>
+
+
 
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
           <li><a class="nav-link scrollto" href="#contact">Free Trial</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -1126,72 +1126,8 @@
     </div>
   </section><!-- End Testimonials Section -->
 
+  <!-- start Team Section -->
 
-  <!-- ======= Team Section ======= -->
-
-  <!-- <section id="team" class="team">
-                <div class="container">
-
-                  <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                    <h2>Team</h2>
-                    <p>Image edit done here with comfortable price, timely and values.
-                      clipping path, multi clipping path,masking,retouching, re sizing, neck join, shadow create, color correction, raster to vector our prime concern.</p>
-                  </div>
-
-                  <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                      <div class="member" data-aos="fade-up">
-                        <div class="pic"><img src="{{('frontend/assets/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
-  <div class="member-info">
-    <h4>Walter White</h4>
-    <span>Chief Executive Officer</span>
-    <div class="social">
-      <a href=""><i class="bi bi-twitter"></i></a>
-      <a href=""><i class="bi bi-facebook"></i></a>
-      <a href=""><i class="bi bi-instagram"></i></a>
-      <a href=""><i class="bi bi-linkedin"></i></a>
-    </div>
-  </div>
-  </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6">
-    <div class="member" data-aos="fade-up" data-aos-delay="150">
-      <div class="pic"><img src="{{('frontend/assets/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>Sarah Jhonson</h4>
-        <span>Product Manager</span>
-        <div class="social">
-          <a href=""><i class="bi bi-twitter"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6">
-    <div class="member" data-aos="fade-up" data-aos-delay="300">
-      <div class="pic"><img src="{{('frontend/assets/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>William Anderson</h4>
-        <span>CTO</span>
-        <div class="social">
-          <a href=""><i class="bi bi-twitter"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  </div>
-  </section> -->
 
   <!-- End Team Section -->
 
@@ -1204,90 +1140,10 @@
         <p>Imageexpert24 is giving best service 24 hours tarn around time. We give service with quickly, in time, quality with affordable price. So contact with us within short time.</p>
       </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="info-box mb-4">
-            <i class='bx bx-map'></i>
-            <h3>USA address
 
-            </h3><br>
-            <p>
-              USA address
-              3031 fredna place,
-              midland, texas 79707
-              USA
-              Mobile Number: 0015127439457
-              Email: Info@imageexpert24.com
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="info-box  mb-4">
-            <i class='bx bxs-map-pin'></i>
-            <h3>Europe Address</h3>
-            <p>
-              14 rue Gabriel peri
-              1er etage
-              st-Denis-93200
-              Paris, France
-              Mob:0033652101391
-              Email:info@imageexpert24.com
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="info-box  mb-4">
-            <i class='bx bxs-map-pin'></i>
-            <h3>Bangladesh address</h3>
-            <p>
-
-              385/7,N.S. Road,
-              East Rampura,Banasree
-              Dhaka-1219, Bangladesh
-              Mobile: 01921020187
-              Email: info@imageexpert24.com
-            </p>
-          </div>
-        </div>
-
-      </div>
 
       <div class="row">
 
-        <div class="col-lg-6 ">
-
-        <form method="post" action="" enctype="multipart/form-data">
-        <div class="card-header bg-info">
-                        <h3 class="text-white">Free Trial</h3>
-                    </div>
-    <div class="form-group">
-    <strong>Name:</strong>
-        <input type="text" name="name" class="form-control"  placeholder="Name" required="">
-    </div>
-    <div class="form-group">
-    <strong>Email:</strong>
-        <input type="email" name="email" class="form-control"  placeholder="Email address" required="">
-    </div>
-    <div class="form-group">
-    <strong>Subject:</strong>
-        <input type="text" name="subject" class="form-control"  placeholder="Subject" required="">
-    </div>
-    <div class="form-group">
-    <strong>Message:</strong>
-        <textarea name="message" class="form-control" placeholder="Write your message here" required=""></textarea>
-    </div>
-    <div class="form-group">
-    <strong>Chose Your File:</strong>
-        <input type="file" name="attachment" class="form-control">
-    </div>
-    <div class="form-group text-center">
-                <button class="btn btn-success btn-submit">Submit</button>
-              </div>
-</form>
-
-        </div>
 
         <div class="col-lg-6">
 
@@ -1295,8 +1151,10 @@
 
 
             <form method="POST" action="{{ url('storecontactus') }}">
-
               {{ csrf_field() }}
+              <div class="card-header bg-info" style="text-align: center;">
+                <h3 class="text-white">Contact Us</h3>
+              </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -1350,11 +1208,99 @@
               </div>
 
               <div class="form-group text-center">
-                <button class="btn btn-success btn-submit">Send Message</button>
+                <button class="btn btn-success btn-submit">Send</button>
               </div>
             </form>
           </div>
 
+        </div>
+
+        <div class="col-lg-6 ">
+
+
+
+          <form method="post" action="" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            <div class="card-header bg-primary" style="text-align: center;">
+              <h3 class="text-white">Free Trial</h3>
+            </div>
+            <div class="form-group">
+              <strong>Name:</strong>
+              <input type="text" name="name" class="form-control"  required="">
+            </div>
+            <div class="form-group">
+              <strong>Email:</strong>
+              <input type="email" name="email" class="form-control"  required="">
+            </div>
+            <div class="form-group">
+              <strong>Subject:</strong>
+              <input type="text" name="subject" class="form-control"  required="">
+            </div>
+            <div class="form-group">
+              <strong>Message:</strong>
+              <textarea name="message" class="form-control"  required=""></textarea>
+            </div>
+            <div class="form-group">
+              <strong>Chose Your File:</strong>
+              <input type="file" name="attachment" class="form-control">
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn-success btn-submit">Submit</button>
+            </div>
+          </form>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class='bx bx-map'></i>
+            <h3>USA address
+
+            </h3><br>
+            <p>
+              USA address
+              3031 fredna place,
+              midland, texas 79707
+              USA
+              Mobile Number: 0015127439457
+              Email: Info@imageexpert24.com
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class='bx bxs-map-pin'></i>
+            <h3>Europe Address</h3>
+            <p>
+              14 rue Gabriel peri
+              1er etage
+              st-Denis-93200
+              Paris, France
+              Mob:0033652101391
+              Email:info@imageexpert24.com
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class='bx bxs-map-pin'></i>
+            <h3>Bangladesh address</h3>
+            <p>
+
+              385/7,N.S. Road,
+              East Rampura,Banasree
+              Dhaka-1219, Bangladesh
+              Mobile: 01921020187
+              Email: info@imageexpert24.com
+            </p>
+          </div>
         </div>
 
       </div>
@@ -1399,10 +1345,9 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
@@ -1410,12 +1355,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('gallery')}}" target="_blank">Gallery</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Multi Clipping Path</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Retouching</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Image Masking</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Image Editing </a></li>
+              <li><a href="{{URL::to('gallery') }}" target="_blank">Gallery</a></li>
+              <li><a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
+
+              <li><a href="#">Image Manipulation</a></li>
+              <li><a href="#">Image Retouching</a></li>
             </ul>
           </div>
 

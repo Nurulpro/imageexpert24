@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::post('/contact-form', [App\Http\Controllers\ContactusController::class, 'contactForm'])->name('contact-form');
 
-// Route::post('/contact-form', [App\Http\Controllers\ContactusController::class, 'storeContactForm'])->name('contact-form.store');
 
 Route::get('/', function () {
     return view('welcome');
@@ -38,7 +36,7 @@ Route::get('/gallery', function () {
 Route::post('subscriber', 'App\Http\Controllers\SubscriberController@storesubscriber');
 
 
-Route::post('storecontactus', 'App\Http\Controllers\Contactus@storecontactus');
+Route::post('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
 
 Route::get('/clippingpath', function () {
     return view('clippingpath');
@@ -56,8 +54,13 @@ Route::get('/SubscriberList', function () {
 
 Route::get('/ContactForms', function () {
     return view('admin.ContactForms');
+
+
 });
 
 Route::get('/freetrial', function () {
     return view('freetrial');
+
+
+   
 });
