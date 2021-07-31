@@ -5,7 +5,8 @@
   <title>Gellary for Imageexpert24.com</title>
 
   <style>
-    #{Margin:0,0,0;
+
+    #header{Margin:0,0,0;
 Padding:0,
     0,
     0;

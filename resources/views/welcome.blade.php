@@ -16,6 +16,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -1216,39 +1218,40 @@
         </div>
 
         <div class="col-lg-6 ">
+          <div class="card-body">
 
 
+            <form method="post" action="" enctype="multipart/form-data">
+              {{ csrf_field() }}
+              <div class="card-header bg-primary" style="text-align: center;">
+                <h3 class="text-white">Free Trial</h3>
+              </div>
+              <div class="form-group">
+                <strong>Name:</strong>
+                <input type="text" name="name" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <strong>Email:</strong>
+                <input type="email" name="email" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <strong>Subject:</strong>
+                <input type="text" name="subject" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <strong>Message:</strong>
+                <textarea name="message" class="form-control" required=""></textarea>
+              </div>
+              <div class="form-group">
+                <strong>Chose Your File:</strong>
+                <input type="file" name="attachment" class="form-control">
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-success btn-submit">Submit</button>
+              </div>
+            </form>
 
-          <form method="post" action="" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <div class="card-header bg-primary" style="text-align: center;">
-              <h3 class="text-white">Free Trial</h3>
-            </div>
-            <div class="form-group">
-              <strong>Name:</strong>
-              <input type="text" name="name" class="form-control"  required="">
-            </div>
-            <div class="form-group">
-              <strong>Email:</strong>
-              <input type="email" name="email" class="form-control"  required="">
-            </div>
-            <div class="form-group">
-              <strong>Subject:</strong>
-              <input type="text" name="subject" class="form-control"  required="">
-            </div>
-            <div class="form-group">
-              <strong>Message:</strong>
-              <textarea name="message" class="form-control"  required=""></textarea>
-            </div>
-            <div class="form-group">
-              <strong>Chose Your File:</strong>
-              <input type="file" name="attachment" class="form-control">
-            </div>
-            <div class="form-group text-center">
-              <button class="btn btn-success btn-submit">Submit</button>
-            </div>
-          </form>
-
+          </div>
         </div>
 
 
@@ -1306,7 +1309,7 @@
       </div>
 
       <div class="col-lg-6 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1280" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1300" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
       </div>
   </section><!-- End Contact Section -->
 
@@ -1372,8 +1375,9 @@
               @csrf
 
               <input type="email" placeholder="Enter your email address" name="email" required><input type="submit" value="Subscribe">
-            </form>
 
+            </form>
+            
           </div>
 
         </div>
@@ -1390,6 +1394,7 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
         Designed by <a href="https://nurulpro.xyz/">Nurul Islam</a>
+         <button id="myTemp">dkjfghdhg</button>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -1401,6 +1406,8 @@
   </div>
   </div>
 
+
+ 
 
   <!-- Vendor JS Files -->
   <script src="{{asset('public/frontend/assets/vendor/aos/aos.js')}}"></script>
@@ -1418,31 +1425,31 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-  <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
+  <!-- for sweet alert  -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-  </script>
+  <script src="{{asset('https://unpkg.com/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+
 
   <script>
-    $(document).on("click", "#delete", function(e) {
-      e.preventDefault();
-      var link = $(this).attr("href");
-      swal({
-          title: "Are you Want to delete?",
-          text: "Once Delete, This will be Permanently Delete!",
-          icon: "warning",
-          buttons: true,
-          dangerMode: true,
-        })
-        .then((willDelete) => {
-          if (willDelete) {
-            window.location.href = link;
-          } else {
-            swal("Safe Data!");
-          }
-        });
-    });
-  </script>
+
+
+    Swal.fire({
+        template: '#my-template',
+        showCloseButton: true,
+        timer: 5500,
+        icon: 'success',
+        cancelButtonColor: '#d33',
+        denyButtonColor: '#6E7D88'
+    })
+
+</script>
+
+
+
+
 </body>
 
 </html>
+

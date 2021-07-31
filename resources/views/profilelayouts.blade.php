@@ -156,7 +156,7 @@
   
 
   <script>
-    @if(Session::has('messege'))
+    if(Sessionhas('messege'))
     var type = "{{Session::get('alert-type','info')}}"
     switch (type) {
       case 'info':
@@ -172,7 +172,7 @@
         toastr.error("{{ Session::get('messege') }}");
         break;
     }
-    @endif
+    endif
   </script>
 
   <script>

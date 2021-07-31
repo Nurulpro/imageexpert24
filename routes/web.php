@@ -36,7 +36,7 @@ Route::get('/gallery', function () {
 Route::post('subscriber', 'App\Http\Controllers\SubscriberController@storesubscriber');
 
 
-Route::post('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
+Route::get('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
 
 Route::get('/clippingpath', function () {
     return view('clippingpath');
