@@ -54,13 +54,17 @@ Route::get('/SubscriberList', function () {
 
 Route::get('/ContactForms', function () {
     return view('admin.ContactForms');
-
-
 });
 
 Route::get('/freetrial', function () {
     return view('freetrial');
+});
 
 
-   
+Route::get('/TermsOfConditions', function () {
+    return view('TermsandConditions');
+});
+
+Route::get('/PrivacyPolicy', function () {
+    return view('PrivacyPolicy');
 });

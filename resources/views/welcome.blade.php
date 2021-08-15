@@ -60,19 +60,7 @@
   <li><a class="nav-link scrollto" href="{{ route('login') }}">Sign In</a></li>
   <li><a class="nav-link scrollto" href="{{ route('register') }}">Sign Up</a></li>
 
-  @if (Route::has('login'))
-  <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-    @auth
-    <a href="{{ url('/welcome') }}" class="text-sm text-gray-700 underline">Logout</a>
-    @else
-    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-
-    @if (Route::has('register'))
-    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-    @endif
-    @endauth
-  </div>
-  @endif -->
+ -->
 
 
 
@@ -1349,9 +1337,9 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('TermsOfConditions') }}">Terms And Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('PrivacyPolicy') }}">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -1377,7 +1365,7 @@
               <input type="email" placeholder="Enter your email address" name="email" required><input type="submit" value="Subscribe">
 
             </form>
-            
+
           </div>
 
         </div>
@@ -1394,7 +1382,8 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
         Designed by <a href="https://nurulpro.xyz/">Nurul Islam</a>
-         <button id="myTemp">dkjfghdhg</button>
+
+
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -1407,7 +1396,7 @@
   </div>
 
 
- 
+
 
   <!-- Vendor JS Files -->
   <script src="{{asset('public/frontend/assets/vendor/aos/aos.js')}}"></script>
@@ -1426,30 +1415,43 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
   <!-- for sweet alert  -->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
   <script src="{{asset('https://unpkg.com/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
   <script>
-
-
-    Swal.fire({
-        template: '#my-template',
-        showCloseButton: true,
-        timer: 5500,
+    $('#myTemp').click(function() {
+      Swal.fire({
+        position: 'top-end',
         icon: 'success',
-        cancelButtonColor: '#d33',
-        denyButtonColor: '#6E7D88'
-    })
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  </script>
 
-</script>
 
-
-
-
-</body>
-
-</html>
-
+  <script>
+    if (Sessionhas('messege'))
+      var type = "{{Session::get('alert-type','info')}}"
+    switch (type) {
+      case 'info':
+        toastr.info("{{ Session::get('messege') }}");
+        break;
+      case 'success':
+        toastr.success("{{ Session::get('messege') }}");
+        break;
+      case 'warning':
+        toastr.warning("{{ Session::get('messege') }}");
+        break;
+      case 'error':
+        toastr.error("{{ Session::get('messege') }}");
+        break;
+    }
+    endif
+  </script>

@@ -4,28 +4,6 @@
 <head>
   <title>Gellary for Imageexpert24.com</title>
 
-  <style>
-
-    #header{Margin:0,0,0;
-Padding:0,
-    0,
-    0;
-    }
-
-
-
-    imageexpert24 {
-      width: 40%;
-      Float: center;
-      color: #ffffff;
-      font-weight: bold;
-      text-transform: uppercase;
-      line-height: 60px;
-      font-size: 36px;
-      font-family: Minion Pro;
-    }
-  </style>
-
   <link href="{{asset('public/frontend/assets/img/favicon.jpg')}}" rel="icon">
   <link href="{{asset('public/frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
@@ -38,7 +16,7 @@ Padding:0,
     <div class="header">
 
       <marquee>
-        <H1>Welcome to  Gallery of Imageexpert24.com</h1>
+        <H1>Welcome to Gallery of Imageexpert24.com</h1>
       </marquee>
     </div>
   </header>
@@ -143,7 +121,10 @@ Padding:0,
   <p align=center><img src="{{('public/frontend/assets/img/gallery/sample57.jpg')}}" height=25% width=30%>
     <align=center><img src="{{('public/frontend/assets/img/gallery/sample58.jpg')}}" height=25% width=30%>
       <align=right><img src="{{('public/frontend/assets/img/gallery/sample59.jpg')}}" height=25% width=30% border=1 tit>
+
+        <button id="myTemp">dkjfghdhg</button>
   </p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 </body>
