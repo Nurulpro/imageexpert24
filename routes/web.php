@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+Route::get('/contact-form', [App\Http\Controllers\ContactController::class, 'contactForm'])->name('contact-form');
+Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'storeContactForm'])->name('contact-form.store');
+
+
+Route::get('/FreeTrial.store', [App\Http\Controllers\ContactController::class, 'contactForm'])->name('contact-form');
+Route::post('/FreeTrial', [App\Http\Controllers\ContactController::class, 'storeFreeTrial'])->name('FreeTrial.store');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('admin.home');
@@ -36,7 +46,7 @@ Route::get('/gallery', function () {
 Route::post('subscriber', 'App\Http\Controllers\SubscriberController@storesubscriber');
 
 
-Route::get('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
+// Route::post('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
 
 Route::get('/clippingpath', function () {
     return view('clippingpath');

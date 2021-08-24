@@ -1140,7 +1140,16 @@
           <div class="card-body">
 
 
-            <form method="POST" action="{{ url('storecontactus') }}">
+            <form method="POST" action="{{route('contact-form.store') }}">
+
+            @if(Session::has('success'))
+                        <div class="alert alert-success">
+                            {{ Session::get('success') }}
+                            @php
+                                Session::forget('success');
+                            @endphp
+                        </div>
+                        @endif
               {{ csrf_field() }}
               <div class="card-header bg-info" style="text-align: center;">
                 <h3 class="text-white">Contact Us</h3>
@@ -1149,7 +1158,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="Enter your Name" value="{{ old('name') }}">
+                    <input type="text" name="name" class="form-control"  value="{{ old('name') }}">
                     @if ($errors->has('name'))
                     <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
@@ -1158,7 +1167,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <strong>Email:</strong>
-                    <input type="text" name="email" class="form-control" placeholder="Enter your Email" value="{{ old('email') }}">
+                    <input type="text" name="email" class="form-control"  value="{{ old('email') }}">
                     @if ($errors->has('email'))
                     <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
@@ -1169,7 +1178,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <strong>Phone:</strong>
-                    <input type="text" name="phone" class="form-control" placeholder="Enter your Phone" value="{{ old('phone') }}">
+                    <input type="text" name="phone" class="form-control"  value="{{ old('phone') }}">
                     @if ($errors->has('phone'))
                     <span class="text-danger">{{ $errors->first('phone') }}</span>
                     @endif
@@ -1178,13 +1187,14 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <strong>Subject:</strong>
-                    <input type="text" name="subject" class="form-control" placeholder="Enter your Subject" value="{{ old('subject') }}">
+                    <input type="text" name="subject" class="form-control"  value="{{ old('subject') }}">
                     @if ($errors->has('subject'))
                     <span class="text-danger">{{ $errors->first('subject') }}</span>
                     @endif
                   </div>
                 </div>
               </div>
+              
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
@@ -1208,8 +1218,15 @@
         <div class="col-lg-6 ">
           <div class="card-body">
 
-
-            <form method="post" action="" enctype="multipart/form-data">
+          @if(Session::has('success'))
+                        <div class="alert alert-success">
+                            {{ Session::get('success') }}
+                            @php
+                                Session::forget('success');
+                            @endphp
+                        </div>
+                        @endif
+            <form method="post" action="{{route('FreeTrial.store') }}" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="card-header bg-primary" style="text-align: center;">
                 <h3 class="text-white">Free Trial</h3>
@@ -1237,6 +1254,7 @@
               <div class="form-group text-center">
                 <button class="btn btn-success btn-submit">Submit</button>
               </div>
+              
             </form>
 
           </div>
@@ -1297,7 +1315,7 @@
       </div>
 
       <div class="col-lg-6 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1300" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1125" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
       </div>
   </section><!-- End Contact Section -->
 

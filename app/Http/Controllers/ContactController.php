@@ -3,52 +3,79 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+use App\Models\Contact;
+use Mail;
 
 class ContactController extends Controller
 {
-
-    public function storecontactus(Request $Request)
+    public function contactForm()
     {
-        $Request->validate([
+        return view('contactForm');
+    }
+
+    public function storeContactForm(Request $request)
+    {
+        $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'phone' => 'required|numeric',
             'subject' => 'required',
             'message' => 'required',
+            
         ]);
 
+        $input = $request->all();
 
-        $data = array();
+        // Contact::create($input);
 
-        $data['name'] = $Request->name;
-        $data['email'] = $Request->email;
-        $data['phone'] = $Request->phone;
-        $data['subject'] = $Request->subject;
-        $data['message'] = $Request->message;
-
-        DB::table('contactus')->insert($data);
-
-        $notification = array(
-            'messege' => 'Thanks for contact us!',
-            'alert-type' => 'success'
-        );
-        return Redirect()->back()->with($notification);
-
+        //  Send mail to admin
         \Mail::send('contactMail', array(
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'phone' => $data['phone'],
-            'subject' => $data['subject'],
-            'message' => $data['message'],
-        ), function ($message) use ($Request) {
-            
-            $message->from($Request->email);
-            $message->to('nurulpro24@gmail.com')->subject($Request->get('subject'));
+            'name' => $input['name'],
+            'email' => $input['email'],
+            'phone' => $input['phone'],
+            'subject' => $input['subject'],
+            'message' => $input['message'],
+           
+
+        ), function($message) use ($request){
+            $message->from($request->email);
+            $message->to('info@imageexpert24.com', 'Hello Admin')->subject($request->get('subject'));
         });
 
-        return redirect()->back()->with(['success' => 'Contact Form Submit Successfully']);
+        return redirect()->back()->with(['success' => 'Contact Form send Successfully']);
     }
+
+
+    public function storeFreeTrial(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required',
+            'attachment' => 'required',
+            
+        ]);
+
+        $input = $request->all();
+
+        // Contact::create($input);
+
+        //  Send mail to admin
+        \Mail::send('FreeTrial', array(
+            'name' => $input['name'],
+            'email' => $input['email'],
+            'subject' => $input['subject'],
+            'attachment' => $input['attachment'],
+           
+
+        ), function($message) use ($request){
+            $message->from($request->email);
+            $message->to('info@imageexpert24.com', 'Hello Admin')->subject($request->get('subject'));
+        });
+
+        return redirect()->back()->with(['success' => 'FreeTrial send Successfully']);
+    }
+
+
 }
-
-
