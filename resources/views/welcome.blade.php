@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('public/frontend/assets/img/favicon.jpg')}}" rel="icon">
-  <link href="{{asset('public/frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
+  <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
+  <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,18 +22,18 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{asset('public/frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{asset('public/frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('public/frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-  <link href="{{asset('public/frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{asset('public/frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-  <link href="{{asset('public/frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- notification allert -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
   <!-- Template Main CSS File -->
-  <link href="{{asset('public/frontend/assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
 
 
 
@@ -71,7 +71,7 @@
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Imageexpart24</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="https://imageexpert24.com"><img src="{{('public/frontend/assets/img/logo.png')}}" alt=""></a>
+        <a href="https://imageexpert24.com"><img src="{{asset('frontend/assets/img/logo.png')}}" alt=""></a>
         <img src="" alt="">
       </div>
 
@@ -119,7 +119,7 @@
 
     <!-- start slider -->
 
-    <script src="{{asset('public/frontend/js/jssor.slider-28.1.0.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('frontend/js/jssor.slider-28.1.0.min.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
       window.jssor_1_slider_init = function() {
 
@@ -447,11 +447,11 @@
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;visibility:hidden;">
       <!-- Loading Screen -->
       <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{{('public/frontend/img/spin.svg')}}" />
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{{asset('frontend/img/spin.svg')}}" />
       </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;">
         <div>
-          <img data-u="image" style="opacity:0.8;" data-src="{{('public/frontend/img/image-manipulation.jpg')}}" />
+          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/image-manipulation.jpg')}}" />
 
 
           <g mask="url(#jssor_1_msk_3)">
@@ -470,7 +470,7 @@
           </svg>
         </div>
         <div>
-          <img data-u="image" data-src="{{('public/frontend/img/imag-masking.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/imag-masking.jpg')}}" />
           <div data-ts="flat" data-p="540" data-po="40% 50%" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:120px;top:260px;width:300px;height:200px;position:absolute;">
               <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:black;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;"><br /></div>
@@ -502,7 +502,7 @@
           </div>
         </div>
         <div style="background-color:#000000;">
-          <img data-u="image" style="opacity:0.8;" data-src="{{('public/frontend/img/shoe-clipping-path1.jpg')}}" />
+          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/shoe-clipping-path1.jpg')}}" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
 
 
@@ -526,7 +526,7 @@
 
         </div>
         <div>
-          <img data-u="image" data-src="{{('public/frontend/img/image-manipulation1.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/image-manipulation1.jpg')}}" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-t="13" style="left:100px;top:-20px;width:800px;height:200px;position:absolute;opacity:0;">
               <g mask="url(#jssor_1_msk_3)">
@@ -547,7 +547,7 @@
           </div>
         </div>
         <div>
-          <img data-u="image" data-src="{{('public/frontend/img/retouching-sample.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/retouching-sample.jpg')}}" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:black;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;"><br /></div>
             <g mask="url(#jssor_1_msk_3)">
@@ -892,9 +892,9 @@
           <div class="portfolio-wrap">
 
 
-            <img src="{{'public/frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid" alt="" id="portimg">
+            <img src="{{'frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid" alt="" id="portimg">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Clipping Path1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -902,9 +902,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid" alt="" id="portimg">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid" alt="" id="portimg">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -912,9 +912,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -922,9 +922,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -932,9 +932,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -944,9 +944,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -954,9 +954,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -965,9 +965,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -975,9 +975,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -987,9 +987,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1001,9 +1001,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1011,9 +1011,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1022,9 +1022,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1033,9 +1033,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1043,9 +1043,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{('public/frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="{{('public/frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -1078,7 +1078,7 @@
 
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{('public/frontend/assets/img/testimonials/Keith French.jpg')}}" id="portimg" class="testimonial-img" alt="">
+              <img src="{{asset('frontend/assets/img/testimonials/Keith French.jpg')}}" id="portimg" class="testimonial-img" alt="">
               <h3>Keith Fraench</h3>
               <h4>Owner &amp; Keith French Photograpy owner</h4>
             </div>
@@ -1093,7 +1093,7 @@
                 Their editing services help me to look like a hero to my clients. Beyond satisfied!!!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{('public/frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" id="portimg" class="testimonial-img" alt="">
+              <img src="{{asset('frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" id="portimg" class="testimonial-img" alt="">
               <h3>Sherry Muldoon</h3>
               <h4>Ceo &amp;Dream Focus Studio</h4>
             </div>
@@ -1417,16 +1417,16 @@
 
 
   <!-- Vendor JS Files -->
-  <script src="{{asset('public/frontend/assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{asset('public/frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('public/frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset('public/frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('public/frontend/assets/vendor/php-email-form/validate.j')}}s"></script>
-  <script src="{{asset('public/frontend/assets/vendor/purecounter/purecounter.js')}}"></script>
-  <script src="{{asset('public/frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/php-email-form/validate.j')}}s"></script>
+  <script src="{{asset('frontend/assets/vendor/purecounter/purecounter.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{asset('public/frontend/assets/js/main.js')}}"></script>
+  <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 

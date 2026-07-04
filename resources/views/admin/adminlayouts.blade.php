@@ -15,17 +15,17 @@
   <title>imageexpert24.com</title>
 
   <!-- vendor css -->
-  <link href="{{asset('public/backend/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
-  <link href="{{asset('public/backend/lib/Ionicons/css/ionicons.css')}}" rel="stylesheet">
-  <link href="{{asset('public/backend/lib/perfect-scrollbar/css/perfect-scrollbar.css')}}" rel="stylesheet">
-  <link href="{{asset('public/backend/lib/rickshaw/rickshaw.min.css')}}" rel="stylesheet">
+  <link href="{{asset('backend/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+  <link href="{{asset('backend/lib/Ionicons/css/ionicons.css')}}" rel="stylesheet">
+  <link href="{{asset('backend/lib/perfect-scrollbar/css/perfect-scrollbar.css')}}" rel="stylesheet">
+  <link href="{{asset('backend/lib/rickshaw/rickshaw.min.css')}}" rel="stylesheet">
 
   <!-- toster css  -->
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
   <!-- Starlight CSS -->
-  <link rel="stylesheet" href="{{asset('public/backend/css/starlight.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/css/starlight.css')}}">
 
 
 
@@ -180,23 +180,23 @@
 
 
 
-  <script src="{{asset('public/backend/lib/jquery/jquery.js')}}"></script>
-  <script src="{{asset('public/backend/lib/popper.js/popper.js')}}"></script>
-  <script src="{{asset('public/backend/lib/bootstrap/bootstrap.js')}}"></script>
-  <script src="{{asset('public/backend/lib/jquery-ui/jquery-ui.js')}}"></script>
-  <script src="{{asset('public/backend/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js')}}"></script>
-  <script src="{{asset('public/backend/lib/jquery.sparkline.bower/jquery.sparkline.min.js')}}"></script>
-  <script src="{{asset('public/backend/lib/d3/d3.js')}}"></script>
-  <script src="{{asset('public/backend/lib/rickshaw/rickshaw.min.js')}}"></script>
-  <script src="{{asset('public/backend/lib/chart.js/Chart.js')}}"></script>
-  <script src="{{asset('public/backend/lib/Flot/jquery.flot.js')}}"></script>
-  <script src="{{asset('public/backend/lib/Flot/jquery.flot.pie.js')}}"></script>
-  <script src="{{asset('public/backend/lib/Flot/jquery.flot.resize.js')}}"></script>
-  <script src="{{asset('public/backend/lib/flot-spline/jquery.flot.spline.js')}}"></script>
+  <script src="{{asset('backend/lib/jquery/jquery.js')}}"></script>
+  <script src="{{asset('backend/lib/popper.js/popper.js')}}"></script>
+  <script src="{{asset('backend/lib/bootstrap/bootstrap.js')}}"></script>
+  <script src="{{asset('backend/lib/jquery-ui/jquery-ui.js')}}"></script>
+  <script src="{{asset('backend/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js')}}"></script>
+  <script src="{{asset('backend/lib/jquery.sparkline.bower/jquery.sparkline.min.js')}}"></script>
+  <script src="{{asset('backend/lib/d3/d3.js')}}"></script>
+  <script src="{{asset('backend/lib/rickshaw/rickshaw.min.js')}}"></script>
+  <script src="{{asset('backend/lib/chart.js/Chart.js')}}"></script>
+  <script src="{{asset('backend/lib/Flot/jquery.flot.js')}}"></script>
+  <script src="{{asset('backend/lib/Flot/jquery.flot.pie.js')}}"></script>
+  <script src="{{asset('backend/lib/Flot/jquery.flot.resize.js')}}"></script>
+  <script src="{{asset('backend/lib/flot-spline/jquery.flot.spline.js')}}"></script>
 
-  <script src="{{asset('public/backend/js/starlight.js')}}"></script>
-  <script src="{{asset('public/backend/js/ResizeSensor.js')}}"></script>
-  <script src="{{asset('public/backend/js/dashboard.js')}}"></script>
+  <script src="{{asset('backend/js/starlight.js')}}"></script>
+  <script src="{{asset('backend/js/ResizeSensor.js')}}"></script>
+  <script src="{{asset('backend/js/dashboard.js')}}"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 

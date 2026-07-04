@@ -74,66 +74,66 @@
   <!-- Photo Grid -->
   <div class="row">
     <div class="column">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path1.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path2.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path3.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path4.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path5.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path6.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path7.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path8.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path9.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path10.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path11.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path12.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path13.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" style="width:100%">
     </div>
     <div class="column">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path14.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path15.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path16.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path17.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path18.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path19.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path20.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path21.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path22.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path23.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path24.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path25.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" style="width:100%">
 
 
     </div>
     <div class="column">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path27.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path28.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path29.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path30.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path31.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path32.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path33.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path34.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path35.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path36.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path37.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path38.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path39.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" style="width:100%">
 
     </div>
     <div class="column">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path40.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path41.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path42.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path43.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path44.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path45.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path46.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path47.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path48.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path49.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path50.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path51.jpg')}}" style="width:100%">
-      <img src="{{('public/frontend/assets/img/clippingpath/clipping-path52.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" style="width:100%">
 
 
     </div>
