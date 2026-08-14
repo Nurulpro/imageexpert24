@@ -1,5 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clipping Path Gallery | Imageexpert24</title>
+  <meta name="description" content="Browse Imageexpert24's clipping path service gallery — real samples of precise background removal and clipping path work for products, watches, apparel and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ url()->current() }}">
+
+  <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
+  <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
+
 <style>
   * {
     box-sizing: border-box;
@@ -58,8 +81,42 @@
     }
   }
 </style>
+</head>
 
-<body>
+<body style="padding-top: 114px;">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="{{ url('/') }}"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="Imageexpert24 logo"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="{{ url('/') }}#hero">Home</a></li>
+          <li><a class="nav-link" href="{{ url('/') }}#about">About Us</a></li>
+          <li><a class="nav-link" href="{{ url('/') }}#services">Services</a></li>
+          <li><a class="nav-link" href="{{ url('/') }}#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="{{ url('/') }}#testimonials">Testimonials</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{URL::to('gallery') }}" target="_blank">Gallery</a></li>
+              <li><a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
+              <li><a href="{{ url('/') }}#services">Image Manipulation</a></li>
+              <li><a href="{{ url('/') }}#services">Image Retouching</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="{{ url('/') }}#contact">Contact Us</a></li>
+          <li><a class="nav-link" href="{{ url('/') }}#contact">Free Trial</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
   <header>
     <div class="header">
 
@@ -74,70 +131,77 @@
   <!-- Photo Grid -->
   <div class="row">
     <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" alt="Clipping path service sample 1 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" alt="Clipping path service sample 2 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" alt="Clipping path service sample 3 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" alt="Clipping path service sample 4 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" alt="Clipping path service sample 5 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" alt="Clipping path service sample 6 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" alt="Clipping path service sample 7 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" alt="Clipping path service sample 8 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" alt="Clipping path service sample 9 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" alt="Clipping path service sample 10 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" alt="Clipping path service sample 11 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" alt="Clipping path service sample 12 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" alt="Clipping path service sample 13 - Imageexpert24" style="width:100%">
     </div>
     <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" alt="Clipping path service sample 14 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" alt="Clipping path service sample 15 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" alt="Clipping path service sample 16 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" alt="Clipping path service sample 17 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" alt="Clipping path service sample 18 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" alt="Clipping path service sample 19 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" alt="Clipping path service sample 20 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" alt="Clipping path service sample 21 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" alt="Clipping path service sample 22 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" alt="Clipping path service sample 23 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" alt="Clipping path service sample 24 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" alt="Clipping path service sample 25 - Imageexpert24" style="width:100%">
 
 
     </div>
     <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" alt="Clipping path service sample 27 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" alt="Clipping path service sample 28 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" alt="Clipping path service sample 29 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" alt="Clipping path service sample 30 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" alt="Clipping path service sample 31 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" alt="Clipping path service sample 32 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" alt="Clipping path service sample 33 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" alt="Clipping path service sample 34 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" alt="Clipping path service sample 35 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" alt="Clipping path service sample 36 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" alt="Clipping path service sample 37 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" alt="Clipping path service sample 38 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" alt="Clipping path service sample 39 - Imageexpert24" style="width:100%">
 
     </div>
     <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" alt="Clipping path service sample 40 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" alt="Clipping path service sample 41 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" alt="Clipping path service sample 42 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" alt="Clipping path service sample 43 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" alt="Clipping path service sample 44 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" alt="Clipping path service sample 45 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" alt="Clipping path service sample 46 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" alt="Clipping path service sample 47 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" alt="Clipping path service sample 48 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" alt="Clipping path service sample 49 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" alt="Clipping path service sample 50 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" alt="Clipping path service sample 51 - Imageexpert24" style="width:100%">
+      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" alt="Clipping path service sample 52 - Imageexpert24" style="width:100%">
 
 
     </div>
   </div>
+
+  <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
 </body>
 

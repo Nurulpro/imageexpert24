@@ -3,26 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class SubscriberController extends Controller
 {
     public function storesubscriber(Request $request)
     {
-
-
-        $validatedData = $request->validate([
-            'email' => 'required|unique:subscriber|max:55',
+        $request->validate([
+            'email' => 'required|email|unique:subscriber|max:55',
         ]);
 
-        $data = array();
-        $data['email'] = $request->email;
-        DB::table('subscriber')->insert($data);
+        DB::table('subscriber')->insert([
+            'email' => $request->email,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-        $notification = array(
+        $notification = [
             'messege' => 'Thanks for subscribing!',
-            'alert-type' => 'success'
-        );
-        return Redirect()->back()->with($notification);
+            'alert-type' => 'success',
+        ];
+
+        return redirect()->back()->with($notification);
     }
 }

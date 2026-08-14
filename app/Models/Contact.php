@@ -9,12 +9,9 @@ class Contact extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-    */
-    public $fillable = [
-        'name', 'email', 'phone', 'subject', 'message'
+    protected $table = 'contactus';
+
+    protected $fillable = [
+        'name', 'email', 'phone', 'subject', 'message', 'attachment',
     ];
 }

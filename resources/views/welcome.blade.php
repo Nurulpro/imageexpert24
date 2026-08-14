@@ -6,9 +6,50 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Imageexpert24.com</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Image Editing, Clipping Path &amp; Photo Retouching Services | Imageexpert24</title>
+  <meta name="description" content="Imageexpert24 offers professional photo editing services — clipping path, image manipulation, background removal, image masking and photo retouching — with fast turnaround and affordable pricing.">
+  <meta name="keywords" content="photo editing service, clipping path service, image manipulation, photo retouching, background removal, image masking, product photo editing, ecommerce photo editing">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ url()->current() }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Imageexpert24">
+  <meta property="og:title" content="Image Editing, Clipping Path &amp; Photo Retouching Services | Imageexpert24">
+  <meta property="og:description" content="Professional photo editing services — clipping path, image manipulation, background removal, image masking and photo retouching — with fast turnaround and affordable pricing.">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:image" content="{{ asset('frontend/assets/img/logo.png') }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Editing, Clipping Path &amp; Photo Retouching Services | Imageexpert24">
+  <meta name="twitter:description" content="Professional photo editing services — clipping path, image manipulation, background removal, image masking and photo retouching — with fast turnaround and affordable pricing.">
+  <meta name="twitter:image" content="{{ asset('frontend/assets/img/logo.png') }}">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Imageexpert24",
+    "url": "{{ url('/') }}",
+    "logo": "{{ asset('frontend/assets/img/logo.png') }}",
+    "email": "info@imageexpert24.com",
+    "telephone": "+8801921020187",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "postalCode": "1219",
+      "addressCountry": "BD"
+    },
+    "sameAs": [
+      "https://www.facebook.com/imageexpert24",
+      "https://twitter.com/Imagesexpert24",
+      "https://www.instagram.com/imageexpert24/",
+      "https://www.youtube.com/c/ImageExpert24"
+    ]
+  }
+  </script>
 
   <!-- Favicons -->
   <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
@@ -43,27 +84,6 @@
 <body>
 
 
-  <!-- @if (Route::has('login'))
-  <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-    @auth
-    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-    @else
-    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-
-    @if (Route::has('register'))
-    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-    @endif
-    @endauth
-  </div>
-  @endif
-
-  <li><a class="nav-link scrollto" href="{{ route('login') }}">Sign In</a></li>
-  <li><a class="nav-link scrollto" href="{{ route('register') }}">Sign Up</a></li>
-
- -->
-
-
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -71,8 +91,7 @@
       <div class="logo">
         <!-- <h1 class="text-light"><a href="index.html"><span>Imageexpart24</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="https://imageexpert24.com"><img src="{{asset('frontend/assets/img/logo.png')}}" alt=""></a>
-        <img src="" alt="">
+        <a href="{{ url('/') }}"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="Imageexpert24 logo"></a>
       </div>
 
 
@@ -451,7 +470,7 @@
       </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:800px;overflow:hidden;">
         <div>
-          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/image-manipulation.jpg')}}" />
+          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/image-manipulation.jpg')}}" alt="Image manipulation service by Imageexpert24" />
 
 
           <g mask="url(#jssor_1_msk_3)">
@@ -470,7 +489,7 @@
           </svg>
         </div>
         <div>
-          <img data-u="image" data-src="{{asset('frontend/img/imag-masking.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/imag-masking.jpg')}}" alt="Image masking service by Imageexpert24" />
           <div data-ts="flat" data-p="540" data-po="40% 50%" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:120px;top:260px;width:300px;height:200px;position:absolute;">
               <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:black;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;"><br /></div>
@@ -502,7 +521,7 @@
           </div>
         </div>
         <div style="background-color:#000000;">
-          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/shoe-clipping-path1.jpg')}}" />
+          <img data-u="image" style="opacity:0.8;" data-src="{{asset('frontend/img/shoe-clipping-path1.jpg')}}" alt="Clipping path service for shoe product photo by Imageexpert24" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
 
 
@@ -526,7 +545,7 @@
 
         </div>
         <div>
-          <img data-u="image" data-src="{{asset('frontend/img/image-manipulation1.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/image-manipulation1.jpg')}}" alt="Image manipulation sample by Imageexpert24" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-t="13" style="left:100px;top:-20px;width:800px;height:200px;position:absolute;opacity:0;">
               <g mask="url(#jssor_1_msk_3)">
@@ -547,7 +566,7 @@
           </div>
         </div>
         <div>
-          <img data-u="image" data-src="{{asset('frontend/img/retouching-sample.jpg')}}" />
+          <img data-u="image" data-src="{{asset('frontend/img/retouching-sample.jpg')}}" alt="Photo retouching sample by Imageexpert24" />
           <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:800px;position:absolute;">
             <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:black;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;"><br /></div>
             <g mask="url(#jssor_1_msk_3)">
@@ -590,6 +609,11 @@
     <script type="text/javascript">
       jssor_1_slider_init();
     </script>
+
+    <div class="hero-container">
+      <h1>Professional Photo Editing &amp; Clipping Path Services</h1>
+      <h2>Clipping Path, Image Manipulation, Retouching &amp; Background Removal — Fast Turnaround, Affordable Price</h2>
+    </div>
 
   </section><!-- End hero Section -->
 
@@ -892,7 +916,7 @@
           <div class="portfolio-wrap">
 
 
-            <img src="{{'frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid" alt="" id="portimg">
+            <img src="{{'frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid" alt="Clipping path portfolio sample 1 by Imageexpert24" id="portimg">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Clipping Path1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -902,7 +926,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid" alt="" id="portimg">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid" alt="Multi clipping path portfolio sample 1 by Imageexpert24" id="portimg">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -912,7 +936,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" class="img-fluid" alt="Clipping path portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -922,7 +946,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -932,7 +956,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" class="img-fluid" alt="Clipping path portfolio sample 4 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -944,7 +968,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -954,7 +978,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -965,7 +989,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" class="img-fluid" alt="Multi clipping path portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -975,7 +999,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -987,7 +1011,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1001,7 +1025,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1011,7 +1035,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" class="img-fluid" alt="Multi clipping path portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1022,7 +1046,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1033,7 +1057,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1043,7 +1067,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" class="img-fluid" alt="">
+            <img src="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
               <a href="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1078,7 +1102,7 @@
 
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{asset('frontend/assets/img/testimonials/Keith French.jpg')}}" id="portimg" class="testimonial-img" alt="">
+              <img src="{{asset('frontend/assets/img/testimonials/Keith French.jpg')}}" id="portimg" class="testimonial-img" alt="Keith French - Imageexpert24 client testimonial">
               <h3>Keith Fraench</h3>
               <h4>Owner &amp; Keith French Photograpy owner</h4>
             </div>
@@ -1093,7 +1117,7 @@
                 Their editing services help me to look like a hero to my clients. Beyond satisfied!!!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{asset('frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" id="portimg" class="testimonial-img" alt="">
+              <img src="{{asset('frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" id="portimg" class="testimonial-img" alt="Sherry Muldoon - Imageexpert24 client testimonial">
               <h3>Sherry Muldoon</h3>
               <h4>Ceo &amp;Dream Focus Studio</h4>
             </div>
@@ -1421,7 +1445,7 @@
   <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('frontend/assets/vendor/php-email-form/validate.j')}}s"></script>
+  <script src="{{asset('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/purecounter/purecounter.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 
@@ -1441,22 +1465,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
+  @if(Session::has('messege'))
   <script>
-    $('#myTemp').click(function() {
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your work has been saved',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    });
-  </script>
-
-
-  <script>
-    if (Sessionhas('messege'))
-      var type = "{{Session::get('alert-type','info')}}"
+    var type = "{{ Session::get('alert-type', 'info') }}";
     switch (type) {
       case 'info':
         toastr.info("{{ Session::get('messege') }}");
@@ -1471,5 +1482,5 @@
         toastr.error("{{ Session::get('messege') }}");
         break;
     }
-    endif
   </script>
+  @endif

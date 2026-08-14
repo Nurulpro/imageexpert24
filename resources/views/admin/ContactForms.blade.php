@@ -4,7 +4,7 @@ $contactus=DB::table('contactus')->get();
 
 @endphp
 
-@extends('dashboard')
+@extends('admin.layout')
 @section('admin_content')
   <!-- ########## START: MAIN PANEL ########## -->
  <div class="sl-mainpanel">

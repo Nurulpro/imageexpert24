@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where chromium-cli *)",
+      "Bash(where npx *)",
+      "Bash(npx --version)",
+      "Bash(npm ls *)"
+    ]
+  }
+}

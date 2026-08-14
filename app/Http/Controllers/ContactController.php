@@ -2,80 +2,64 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Mail\ContactFormMail;
+use App\Mail\FreeTrialMail;
 use App\Models\Contact;
-use Mail;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-    public function contactForm()
-    {
-        return view('contactForm');
-    }
-
     public function storeContactForm(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required|numeric',
             'subject' => 'required',
             'message' => 'required',
-            
         ]);
 
-        $input = $request->all();
+        Contact::create($validated);
 
-        // Contact::create($input);
-
-        //  Send mail to admin
-        \Mail::send('contactMail', array(
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'phone' => $input['phone'],
-            'subject' => $input['subject'],
-            'message' => $input['message'],
-           
-
-        ), function($message) use ($request){
-            $message->from($request->email);
-            $message->to('info@imageexpert24.com', 'Hello Admin')->subject($request->get('subject'));
-        });
+        Mail::to('info@imageexpert24.com')->send(new ContactFormMail(
+            $validated['name'],
+            $validated['email'],
+            $validated['phone'],
+            $validated['subject'],
+            $validated['message'],
+        ));
 
         return redirect()->back()->with(['success' => 'Contact Form send Successfully']);
     }
 
-
     public function storeFreeTrial(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
-            'message' => 'required',
-            'attachment' => 'required',
-            
+            'attachment' => 'required|file',
         ]);
 
-        $input = $request->all();
+        $file = $request->file('attachment');
+        $path = $file->store('free-trial-attachments');
 
-        // Contact::create($input);
+        Contact::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'subject' => $validated['subject'],
+            'attachment' => $path,
+        ]);
 
-        //  Send mail to admin
-        \Mail::send('FreeTrial', array(
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'subject' => $input['subject'],
-            'attachment' => $input['attachment'],
-           
-
-        ), function($message) use ($request){
-            $message->from($request->email);
-            $message->to('info@imageexpert24.com', 'Hello Admin')->subject($request->get('subject'));
-        });
+        Mail::to('info@imageexpert24.com')->send(new FreeTrialMail(
+            $validated['name'],
+            $validated['email'],
+            $validated['subject'],
+            $path,
+            $file->getClientOriginalName(),
+        ));
 
         return redirect()->back()->with(['success' => 'FreeTrial send Successfully']);
     }
-
-
 }

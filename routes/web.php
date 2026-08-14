@@ -1,75 +1,35 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
-
-Route::get('/contact-form', [App\Http\Controllers\ContactController::class, 'contactForm'])->name('contact-form');
-Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'storeContactForm'])->name('contact-form.store');
-
-
-Route::get('/FreeTrial.store', [App\Http\Controllers\ContactController::class, 'contactForm'])->name('contact-form');
-Route::post('/FreeTrial', [App\Http\Controllers\ContactController::class, 'storeFreeTrial'])->name('FreeTrial.store');
-
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SubscriberController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::get('/dashboard', function () {
     return view('admin.home');
-})->name('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-
-
-Route::get('/greeting', function () {
-    return view('welcome');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+require __DIR__.'/auth.php';
+
+// Public marketing pages
 
 Route::get('/gallery', function () {
     return view('gallery');
 });
 
-Route::post('subscriber', 'App\Http\Controllers\SubscriberController@storesubscriber');
-
-
-// Route::post('storecontactus', 'App\Http\Controllers\ContactController@storecontactus');
-
 Route::get('/clippingpath', function () {
     return view('clippingpath');
 });
-
-// admin route
-
-Route::get('/admin', function () {
-    return view('admin.adminlayouts');
-});
-
-Route::get('/SubscriberList', function () {
-    return view('admin.subscriber');
-});
-
-Route::get('/ContactForms', function () {
-    return view('admin.ContactForms');
-});
-
-Route::get('/freetrial', function () {
-    return view('freetrial');
-});
-
 
 Route::get('/TermsOfConditions', function () {
     return view('TermsandConditions');
@@ -77,4 +37,22 @@ Route::get('/TermsOfConditions', function () {
 
 Route::get('/PrivacyPolicy', function () {
     return view('PrivacyPolicy');
+});
+
+// Contact / free trial / subscriber forms
+
+Route::post('/contact-form', [ContactController::class, 'storeContactForm'])->name('contact-form.store');
+Route::post('/FreeTrial', [ContactController::class, 'storeFreeTrial'])->name('FreeTrial.store');
+Route::post('/subscriber', [SubscriberController::class, 'storesubscriber'])->name('subscriber.store');
+
+// Admin panel (auth-gated)
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/SubscriberList', function () {
+        return view('admin.subscriber');
+    });
+
+    Route::get('/ContactForms', function () {
+        return view('admin.ContactForms');
+    });
 });

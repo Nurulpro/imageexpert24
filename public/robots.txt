@@ -1,2 +1,9 @@
 User-agent: *
-Disallow:
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /SubscriberList
+Disallow: /ContactForms
+
+Sitemap: https://imageexpert24.com/sitemap.xml
