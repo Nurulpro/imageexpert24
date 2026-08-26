@@ -23,148 +23,498 @@
   <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
 
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-
-  .row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-</style>
 </head>
 
 <body style="padding-top: 114px;">
 
   @include('partials.header')
 
-  <header>
-    <div class="header">
-
-      <marquee>
-        <H1>Welcome to Clipping path Gallery of Imageexpert24.com</h1>
-      </marquee>
-    </div>
-  </header>
-  <!-- Header -->
-
-
-  <!-- Photo Grid -->
-  <div class="row">
-    <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" alt="Clipping path service sample 1 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" alt="Clipping path service sample 2 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" alt="Clipping path service sample 3 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" alt="Clipping path service sample 4 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" alt="Clipping path service sample 5 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" alt="Clipping path service sample 6 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" alt="Clipping path service sample 7 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" alt="Clipping path service sample 8 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" alt="Clipping path service sample 9 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" alt="Clipping path service sample 10 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" alt="Clipping path service sample 11 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" alt="Clipping path service sample 12 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" alt="Clipping path service sample 13 - Imageexpert24" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" alt="Clipping path service sample 14 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" alt="Clipping path service sample 15 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" alt="Clipping path service sample 16 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" alt="Clipping path service sample 17 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" alt="Clipping path service sample 18 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" alt="Clipping path service sample 19 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" alt="Clipping path service sample 20 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" alt="Clipping path service sample 21 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" alt="Clipping path service sample 22 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" alt="Clipping path service sample 23 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" alt="Clipping path service sample 24 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" alt="Clipping path service sample 25 - Imageexpert24" style="width:100%">
-
-
-    </div>
-    <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" alt="Clipping path service sample 27 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" alt="Clipping path service sample 28 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" alt="Clipping path service sample 29 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" alt="Clipping path service sample 30 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" alt="Clipping path service sample 31 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" alt="Clipping path service sample 32 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" alt="Clipping path service sample 33 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" alt="Clipping path service sample 34 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" alt="Clipping path service sample 35 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" alt="Clipping path service sample 36 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" alt="Clipping path service sample 37 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" alt="Clipping path service sample 38 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" alt="Clipping path service sample 39 - Imageexpert24" style="width:100%">
-
-    </div>
-    <div class="column">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" alt="Clipping path service sample 40 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" alt="Clipping path service sample 41 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" alt="Clipping path service sample 42 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" alt="Clipping path service sample 43 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" alt="Clipping path service sample 44 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" alt="Clipping path service sample 45 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" alt="Clipping path service sample 46 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" alt="Clipping path service sample 47 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" alt="Clipping path service sample 48 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" alt="Clipping path service sample 49 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" alt="Clipping path service sample 50 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" alt="Clipping path service sample 51 - Imageexpert24" style="width:100%">
-      <img src="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" alt="Clipping path service sample 52 - Imageexpert24" style="width:100%">
-
-
+  <div class="breadcrumbs">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h2>Clipping Path Gallery</h2>
+      <ol>
+        <li><a href="{{ url('/') }}">Home</a></li>
+        <li>Clipping Path</li>
+      </ol>
     </div>
   </div>
+
+  <section class="portfolio">
+    <div class="container">
+
+      <div class="row portfolio-container" data-aos="fade-up">
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" class="img-fluid" alt="Clipping path service sample 1 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path1.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 1"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" class="img-fluid" alt="Clipping path service sample 2 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path2.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" class="img-fluid" alt="Clipping path service sample 3 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path3.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" class="img-fluid" alt="Clipping path service sample 4 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path4.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 4"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" class="img-fluid" alt="Clipping path service sample 5 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path5.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 5"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" class="img-fluid" alt="Clipping path service sample 6 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path6.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 6"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" class="img-fluid" alt="Clipping path service sample 7 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path7.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 7"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" class="img-fluid" alt="Clipping path service sample 8 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path8.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 8"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" class="img-fluid" alt="Clipping path service sample 9 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path9.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 9"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" class="img-fluid" alt="Clipping path service sample 10 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path10.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 10"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" class="img-fluid" alt="Clipping path service sample 11 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path11.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 11"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" class="img-fluid" alt="Clipping path service sample 12 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path12.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 12"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" class="img-fluid" alt="Clipping path service sample 13 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path13.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 13"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" class="img-fluid" alt="Clipping path service sample 14 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path14.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 14"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" class="img-fluid" alt="Clipping path service sample 15 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path15.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 15"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" class="img-fluid" alt="Clipping path service sample 16 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path16.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 16"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" class="img-fluid" alt="Clipping path service sample 17 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path17.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 17"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" class="img-fluid" alt="Clipping path service sample 18 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path18.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 18"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" class="img-fluid" alt="Clipping path service sample 19 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path19.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 19"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" class="img-fluid" alt="Clipping path service sample 20 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path20.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 20"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" class="img-fluid" alt="Clipping path service sample 21 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path21.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 21"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" class="img-fluid" alt="Clipping path service sample 22 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path22.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 22"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" class="img-fluid" alt="Clipping path service sample 23 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path23.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 23"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" class="img-fluid" alt="Clipping path service sample 24 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path24.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 24"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" class="img-fluid" alt="Clipping path service sample 25 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path25.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 25"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path26.jpg')}}" class="img-fluid" alt="Clipping path service sample 26 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path26.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 26"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" class="img-fluid" alt="Clipping path service sample 27 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path27.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 27"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" class="img-fluid" alt="Clipping path service sample 28 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path28.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 28"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" class="img-fluid" alt="Clipping path service sample 29 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path29.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 29"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" class="img-fluid" alt="Clipping path service sample 30 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path30.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 30"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" class="img-fluid" alt="Clipping path service sample 31 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path31.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 31"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" class="img-fluid" alt="Clipping path service sample 32 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path32.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 32"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" class="img-fluid" alt="Clipping path service sample 33 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path33.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 33"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" class="img-fluid" alt="Clipping path service sample 34 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path34.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 34"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" class="img-fluid" alt="Clipping path service sample 35 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path35.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 35"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" class="img-fluid" alt="Clipping path service sample 36 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path36.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 36"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" class="img-fluid" alt="Clipping path service sample 37 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path37.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 37"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" class="img-fluid" alt="Clipping path service sample 38 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path38.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 38"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" class="img-fluid" alt="Clipping path service sample 39 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path39.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 39"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" class="img-fluid" alt="Clipping path service sample 40 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path40.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 40"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" class="img-fluid" alt="Clipping path service sample 41 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path41.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 41"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" class="img-fluid" alt="Clipping path service sample 42 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path42.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 42"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" class="img-fluid" alt="Clipping path service sample 43 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path43.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 43"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" class="img-fluid" alt="Clipping path service sample 44 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path44.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 44"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" class="img-fluid" alt="Clipping path service sample 45 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path45.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 45"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" class="img-fluid" alt="Clipping path service sample 46 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path46.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 46"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" class="img-fluid" alt="Clipping path service sample 47 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path47.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 47"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" class="img-fluid" alt="Clipping path service sample 48 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path48.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 48"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" class="img-fluid" alt="Clipping path service sample 49 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path49.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 49"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" class="img-fluid" alt="Clipping path service sample 50 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path50.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 50"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" class="img-fluid" alt="Clipping path service sample 51 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path51.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 51"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <img src="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" class="img-fluid" alt="Clipping path service sample 52 - Imageexpert24">
+            <div class="portfolio-links">
+              <a href="{{asset('frontend/assets/img/clippingpath/clipping-path52.jpg')}}" data-gallery="clippingGrid" class="portfolio-lightbox" title="Sample 52"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   @include('partials.footer')
 

@@ -100,16 +100,16 @@
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Samples</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{URL::to('gallery') }}" target="_blank">Gallery</a></li>
               <li><a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Free Trial</a></li>
+          <li><a class="nav-link scrollto nav-cta" href="#contact">Free Trial</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

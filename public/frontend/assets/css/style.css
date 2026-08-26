@@ -93,8 +93,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  
-  background: #419ca09e;
+
+  background: #003F48;
 
   padding: 0px;
 }
@@ -171,6 +171,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .nav-cta {
+  margin-left: 15px;
+  padding: 8px 22px !important;
+  border-radius: 50px;
+  background: #67b0d1;
+  color: #fff !important;
+}
+
+.navbar .nav-cta:hover {
+  background: #2f4d5a !important;
 }
 
 .navbar .dropdown ul {
