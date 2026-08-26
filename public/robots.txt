@@ -6,4 +6,4 @@ Disallow: /profile
 Disallow: /SubscriberList
 Disallow: /ContactForms
 
-Sitemap: https://imageexpert24.com/sitemap.xml
+Sitemap: https://www.imageexpert24.com/sitemap.xml

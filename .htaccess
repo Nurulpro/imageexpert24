@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force https + www in a single redirect
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^imageexpert24\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.imageexpert24.com/$1 [L,R=301]
+
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
