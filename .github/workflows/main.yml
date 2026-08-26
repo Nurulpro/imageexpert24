@@ -1,0 +1,36 @@
+name: Deploy Laravel to Shared Hosting
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy to hpanel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Optional: build assets if needed (npm)
+      # - name: Install Dependencies
+      #   run: npm install
+
+      # - name: Build Assets
+      #   run: npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 145.79.58.228
+          username: ${{ secrets.Devnurul }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          server-dir: ./
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
