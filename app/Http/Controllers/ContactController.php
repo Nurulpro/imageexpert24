@@ -30,7 +30,10 @@ class ContactController extends Controller
             $validated['message'],
         ));
 
-        return redirect()->back()->with(['success' => 'Contact Form send Successfully']);
+        return redirect()->back()->with([
+            'messege' => 'Thanks for reaching out — we\'ll get back to you shortly.',
+            'alert-type' => 'success',
+        ]);
     }
 
     public function storeFreeTrial(Request $request)
@@ -60,6 +63,9 @@ class ContactController extends Controller
             $file->getClientOriginalName(),
         ));
 
-        return redirect()->back()->with(['success' => 'FreeTrial send Successfully']);
+        return redirect()->back()->with([
+            'messege' => 'Your free trial request has been submitted — check your email soon.',
+            'alert-type' => 'success',
+        ]);
     }
 }

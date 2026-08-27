@@ -1016,14 +1016,6 @@
 
             <form method="POST" action="{{route('contact-form.store') }}">
 
-            @if(Session::has('success'))
-                        <div class="alert alert-success">
-                            {{ Session::get('success') }}
-                            @php
-                                Session::forget('success');
-                            @endphp
-                        </div>
-                        @endif
               {{ csrf_field() }}
               <div class="card-header bg-info" style="text-align: center;">
                 <h3 class="text-white">Contact Us</h3>
@@ -1092,14 +1084,6 @@
         <div class="col-lg-6 ">
           <div class="card-body">
 
-          @if(Session::has('success'))
-                        <div class="alert alert-success">
-                            {{ Session::get('success') }}
-                            @php
-                                Session::forget('success');
-                            @endphp
-                        </div>
-                        @endif
             <form method="post" action="{{route('FreeTrial.store') }}" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="card-header bg-primary" style="text-align: center;">
@@ -1206,6 +1190,9 @@
 
 
 
+  <!-- jQuery (must load before toastr, which depends on it) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
   <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -1228,11 +1215,17 @@
 
   <script src="{{asset('https://unpkg.com/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
+  <style>
+    #toast-container.toast-bottom-right {
+      bottom: 70px;
+    }
+  </style>
 
   @if(Session::has('messege'))
   <script>
+    toastr.options.positionClass = 'toast-bottom-right';
     var type = "{{ Session::get('alert-type', 'info') }}";
     switch (type) {
       case 'info':
