@@ -32,7 +32,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{ URL::to('/') }}">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{ URL::to('/') }}#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ URL::to('/') }}#about">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ URL::to('about-us') }}">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('TermsOfConditions') }}">Terms And Conditions</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{URL::to('PrivacyPolicy') }}">Privacy policy</a></li>
             </ul>

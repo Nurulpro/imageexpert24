@@ -9,7 +9,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="{{ url('/') }}#hero">Home</a></li>
-          <li><a class="nav-link" href="{{ url('/') }}#about">About Us</a></li>
+          <li><a class="nav-link" href="{{ URL::to('about-us') }}">About Us</a></li>
           <li><a class="nav-link" href="{{ url('/') }}#services">Services</a></li>
           <li class="dropdown"><a href="#"><span>Samples</span> <i class="bi bi-chevron-down"></i></a>
             <ul>

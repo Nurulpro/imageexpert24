@@ -13,6 +13,7 @@
     <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
     <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
+    <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
@@ -208,7 +209,10 @@
 
     @include('partials.footer')
 
+    <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
     <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
     <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 </body>
 

@@ -31,6 +31,10 @@ Route::get('/clippingpath', function () {
     return view('clippingpath');
 });
 
+Route::get('/about-us', function () {
+    return view('AboutUs');
+});
+
 Route::get('/TermsOfConditions', function () {
     return view('TermsandConditions');
 });

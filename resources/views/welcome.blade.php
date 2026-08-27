@@ -98,7 +98,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="{{ URL::to('about-us') }}">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li class="dropdown"><a href="#"><span>Samples</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -618,14 +618,12 @@
       <div class="row no-gutters">
         <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
           <div class="content">
-            <h3>Imageexpert24 is an online based graphics design studio
-            </h3>
+            <h3>Imageexpert24 is an online graphics design studio</h3>
             <p>
-              Image expert 24 is doing image edit Within short time, perfect follow in the instruction, quality full, low cost and all time communication. We are giving best help our customers. All the time we provide instant response for our customers. Image expert 24 quickly handle Customers opportunities.
-
+              We deliver clipping path, image manipulation, background removal, masking and retouching for e-commerce sellers, product photographers and creative businesses worldwide — with fast turnaround, consistent quality and clear communication at every step.
             </p>
 
-            <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
+            <a href="{{ URL::to('about-us') }}" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
           </div>
 
         </div>
@@ -634,138 +632,24 @@
           <div class="icon-boxes d-flex flex-column justify-content-center">
             <div class="row">
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <i class='bx bxs-photo-album'></i>
-                <h4>Image expert 24 CSSO</h4>
-                <style>
-                  #more {
-                    display: none;
-                  }
-                </style>
-                <p>Image expert 24 is doing image edit Within short time, perfect follow in the instruction, quality full, low cost and all time communication. We are giving best help our customers. All the time we provide instant response for our customers. Image expert 24 quickly handle Customers opportunities.<span id="dots">...</span><span id="more">Image exprt24’s CSI organized by special team.There is working three shifts in a day, per shift work at three executive customer support service operator. Their one is leader and another two help the leader. Two customer support service operator’s work type is two type. One checked mail inbox and he understood these mail than reply to customers that’s mail accordingly. Another operator is checking file which come from production. He check that have the files been working with instructions? In addition our customer support service operators work very efficiently. If two helper operators work any wrong activities, head leader correct these activities. Customer support head leader is doing everything with smoothly. In order that any client cannot reproach.While one shift’s time is over than another shift’s team come. Head leader easily explained to another head leader. Another head leader takes the task perfectly. Than he distribute the task to his helper operators. In order that cannot service hamper any client.</span></p>
-                <button onclick="myFunction()" id="myBtn">Read more</button>
-
-                <script>
-                  function myFunction() {
-                    var dots = document.getElementById("dots");
-                    var moreText = document.getElementById("more");
-                    var btnText = document.getElementById("myBtn");
-
-                    if (dots.style.display === "none") {
-                      dots.style.display = "inline";
-                      btnText.innerHTML = "Read more";
-                      moreText.style.display = "none";
-                    } else {
-                      dots.style.display = "none";
-                      btnText.innerHTML = "Read less";
-                      moreText.style.display = "inline";
-                    }
-                  }
-                </script>
-
+                <i class='bx bx-walk'></i>
+                <h4>Round-the-Clock Production</h4>
+                <p>Our studio runs three shifts, 24 hours a day, seven days a week, across five production levels — from junior designer to senior quality control — so your deadline is never waiting on our time zone.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                <i class='bx bx-walk'></i>
-                <style>
-                  #more2 {
-                    display: none;
-                  }
-                </style>
-
-                <h4>Working team</h4>
-                <p>Image expert 24 work 24/7-365 it has 3 shifts, per shift 8 hours’ work. I have 5 years experienced production manage. Per shift 50 expert designers work. Our production sector is consist of 5 levels<span id="dots2">...</span><span id="more2">
-                    1. Junior Graphics designer
-                    2. Graphics designer
-                    3. Senior Graphics designer
-                    4. Junior Quality controller
-                    5. Senior Quality controller.
-                    Every shift is confident for image work. They are able to finish any work without any help.</span></p>
-                <button onclick="myFunction2()" id="myBtn2">Read more</button>
-
-
-
-                <script>
-                  function myFunction2() {
-                    var dots2 = document.getElementById("dots2");
-                    var moreText = document.getElementById("more2");
-                    var btnText = document.getElementById("myBtn2");
-
-                    if (dots2.style.display === "none") {
-                      dots2.style.display = "inline";
-                      btnText.innerHTML = "Read more";
-                      moreText.style.display = "none";
-                    } else {
-                      dots2.style.display = "none";
-                      btnText.innerHTML = "Read less";
-                      moreText.style.display = "inline";
-                    }
-                  }
-                </script>
-
+                <i class='bx bxs-photo-album'></i>
+                <h4>Dedicated Support Team</h4>
+                <p>A customer support operator is on every shift to answer questions, track your files through production, and keep you updated from order to delivery.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon"><i class="bx bxl-paypal"></i></div>
-
-
-                <style>
-                  #more3 {
-                    display: none;
-                  }
-                </style>
-                <h4>Payment Method</h4>
-                <p>The time is globalization. Payment is very easy in the hole world. Money transfer is not problem in this time. Many way to transferring money such as PayPal, payoneer, <span id="dots3">...</span><span id="more3">skrill. Amazon, Bank account, debit Master card, visa card, cash delivery etc. We are transferring money with PayPal, Payoneer, master card, Bank account, Cash delivery.
-                  </span></p>
-                <button onclick="myFunction3()" id="myBtn3">Read more</button>
-
-                <script>
-                  function myFunction3() {
-                    var dots3 = document.getElementById("dots3");
-                    var moreText = document.getElementById("more3");
-                    var btnText = document.getElementById("myBtn3");
-
-                    if (dots3.style.display === "none") {
-                      dots3.style.display = "inline";
-                      btnText.innerHTML = "Read more";
-                      moreText.style.display = "none";
-                    } else {
-                      dots3.style.display = "none";
-                      btnText.innerHTML = "Read less";
-                      moreText.style.display = "inline";
-                    }
-                  }
-                </script>
+                <h4>Flexible Payment Options</h4>
+                <p>Pay the way that works for you — PayPal, Payoneer, bank transfer, debit or credit card, or cash on delivery.</p>
               </div>
               <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                 <i class='bx bx-user-plus'></i>
-                <style>
-                  #more4 {
-                    display: none;
-                  }
-                </style>
-
-                <h4>Image exprt24’s CSI organized by special team</h4>
-
-                <p>web site developer, graphics studio, image studio, catalog design house, magazine agency, printing press, advertising firm, graphics design firm, clothing company,<span id="dots4">...</span><span id="more4"> shoes company, product service agency. Admin of Image expert24 is expert enough to understand the expectation of the clients. Time binding is followed very rigidly by the officials of the studio. Imageexpert24 is very adamant to maintain its credintiallity.
-                  </span></p>
-                <button onclick="myFunction4()" id="myBtn4">Read more</button>
-
-                <script>
-                  function myFunction4() {
-                    var dots4 = document.getElementById("dots4");
-                    var moreText = document.getElementById("more4");
-                    var btnText = document.getElementById("myBtn4");
-
-                    if (dots4.style.display === "none") {
-                      dots4.style.display = "inline";
-                      btnText.innerHTML = "Read more";
-                      moreText.style.display = "none";
-                    } else {
-                      dots4.style.display = "none";
-                      btnText.innerHTML = "Read less";
-                      moreText.style.display = "inline";
-                    }
-                  }
-                </script>
-
+                <h4>Trusted Across Industries</h4>
+                <p>We work with web developers, graphic and photo studios, catalog and magazine publishers, printing houses, advertising firms, and clothing and footwear brands worldwide.</p>
               </div>
             </div>
           </div><!-- End .content-->
@@ -783,42 +667,39 @@
 
       <div class="section-title" data-aos="fade-in" data-aos-delay="100">
         <h2>Services</h2>
-        <p>Image expert 24 is doing image edit Within short time,
-          perfect follow in the instruction, quality full, low cost and all time communication..</p>
+        <p>Professional photo editing services, delivered fast and priced to fit your budget.</p>
       </div>
 
       <div class="row">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up">
-
-
             <div class="icon"><i class='bx bxs-edit'></i></div>
-            <h4 class="title"><a href="">Image Editing</a></h4>
-            <p class="description">Image editing is a photoshop work on a photo to enhance or remove the photo's background. </p>
+            <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Editing</a></h4>
+            <p class="description">Background removal, color correction and general photo cleanup to make your images sales-ready.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class='bx bxs-crop'></i></div>
-            <h4 class="title"><a href="">Clipping Path</a></h4>
-            <p class="description">Clipping path is made by photohsop pen tool on an image's side by side. That's the clipping path.</p>
+            <h4 class="title"><a href="{{ URL::to('clippingpath') }}">Clipping Path</a></h4>
+            <p class="description">Precise pen-tool cutouts for clean, professional product edges on any background.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class='bx bxs-magic-wand'></i></div>
-            <h4 class="title"><a href="">Neck join</a></h4>
-            <p class="description">Image neck join is a process of photoshop work, It's works for an image to create a full size of product. </p>
+            <h4 class="title"><a href="{{ URL::to('gallery') }}">Neck Joint</a></h4>
+            <p class="description">Seamless neck-to-body joins for ghost mannequin and flat-lay clothing photography.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class='bx bx-pen'></i></div>
-            <h4 class="title"><a href="">Image Enhancement and Image Manipulating</a></h4>
-            <p class="description">Image enhancement and image manipulation is a photoshop working process for a old or low regulation's image. The image will be new and looking nice. </p>
+            <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Enhancement</a></h4>
+            <p class="description">Restoration and manipulation that brings old or low-quality images up to a modern standard.</p>
           </div>
         </div>
 
@@ -876,6 +757,12 @@
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
 
+    <style>
+      .portimg {
+        border: 2px solid rgb(129, 62, 62);
+      }
+    </style>
+
     <div class="container">
 
       <div class="section-title" data-aos="fade-in" data-aos-delay="100">
@@ -897,12 +784,6 @@
       </div>
 
 
-      <style>
-        #portimg {
-          border: 2px solid rgb(129, 62, 62);
-        }
-      </style>
-
 
       <div class="row portfolio-container" data-aos="fade-up">
 
@@ -910,50 +791,45 @@
           <div class="portfolio-wrap">
 
 
-            <img src="{{'frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid" alt="Clipping path portfolio sample 1 by Imageexpert24" id="portimg">
+            <img src="{{'frontend/assets/img/portfolio/Clipping Path1.jpg'}}" class="img-fluid portimg" alt="Clipping path portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid" alt="Multi clipping path portfolio sample 1 by Imageexpert24" id="portimg">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" class="img-fluid portimg" alt="Multi clipping path portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" class="img-fluid" alt="Clipping path portfolio sample 2 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" class="img-fluid portimg" alt="Clipping path portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" class="img-fluid portimg" alt="Photo retouching portfolio sample by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-path">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" class="img-fluid" alt="Clipping path portfolio sample 4 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" class="img-fluid portimg" alt="Clipping path portfolio sample 4 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Clipping Path4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -962,20 +838,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample 1 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" class="img-fluid portimg" alt="Image editing portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample 3 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" class="img-fluid portimg" alt="Photo retouching portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -983,20 +857,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" class="img-fluid" alt="Multi clipping path portfolio sample 2 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" class="img-fluid portimg" alt="Multi clipping path portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample 2 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" class="img-fluid portimg" alt="Image editing portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -1005,10 +877,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-retouching">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" class="img-fluid" alt="Photo retouching portfolio sample by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" class="img-fluid portimg" alt="Photo retouching portfolio sample by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/retouching1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -1019,20 +890,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 1 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" class="img-fluid portimg" alt="Image masking portfolio sample 1 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-multipath">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" class="img-fluid" alt="Multi clipping path portfolio sample 3 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" class="img-fluid portimg" alt="Multi clipping path portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/multiclippingpath3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -1040,10 +909,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-editing">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" class="img-fluid" alt="Image editing portfolio sample by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" class="img-fluid portimg" alt="Image editing portfolio sample by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/image-editing.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -1051,20 +919,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 2 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" class="img-fluid portimg" alt="Image masking portfolio sample 2 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making2.jpeg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-masking">
           <div class="portfolio-wrap">
-            <img src="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" class="img-fluid" alt="Image masking portfolio sample 3 by Imageexpert24">
+            <img src="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" class="img-fluid portimg" alt="Image masking portfolio sample 3 by Imageexpert24">
             <div class="portfolio-links">
-              <a href="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" id="portimg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="{{asset('frontend/assets/img/portfolio/Making3.jpeg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         </div>
@@ -1079,7 +945,7 @@
 
       <div class="section-title" data-aos="fade-in" data-aos-delay="100">
         <h2>Testimonials</h2>
-        <p>Imageexper24 have been doing image editing for 8 years. Our clients are very happy to work with us. Here are some testimonials for your confirmation that they are so happy and pleased about our jobs are very fine.</p>
+        <p>Hear what our clients have to say about working with us.</p>
       </div>
 
       <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -1096,8 +962,8 @@
 
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{asset('frontend/assets/img/testimonials/Keith French.jpg')}}" id="portimg" class="testimonial-img" alt="Keith French - Imageexpert24 client testimonial">
-              <h3>Keith Fraench</h3>
+              <img src="{{asset('frontend/assets/img/testimonials/Keith French.jpg')}}" class="testimonial-img" alt="Keith French - Imageexpert24 client testimonial">
+              <h3>Keith French</h3>
               <h4>Owner &amp; Keith French Photograpy owner</h4>
             </div>
           </div><!-- End testimonial item -->
@@ -1111,21 +977,11 @@
                 Their editing services help me to look like a hero to my clients. Beyond satisfied!!!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="{{asset('frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" id="portimg" class="testimonial-img" alt="Sherry Muldoon - Imageexpert24 client testimonial">
+              <img src="{{asset('frontend/assets/img/testimonials/Sherry Muldoon.jpg')}}" class="testimonial-img" alt="Sherry Muldoon - Imageexpert24 client testimonial">
               <h3>Sherry Muldoon</h3>
               <h4>Ceo &amp;Dream Focus Studio</h4>
             </div>
           </div><!-- End testimonial item -->
-
-
-
-
-
-
-          >
-
-
-
 
         </div>
         <div class="swiper-pagination"></div>
@@ -1332,8 +1188,10 @@
 
       </div>
 
-      <div class="col-lg-6 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" width="1125" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="row">
+        <div class="col-lg-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" style="width: 100%; height: 450px; border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
   </section><!-- End Contact Section -->
 
