@@ -9,6 +9,14 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Imageexpert24">
+    <meta property="og:title" content="Privacy Policy | Imageexpert24">
+    <meta property="og:description" content="Read Imageexpert24's privacy policy to learn what information we collect from visitors and how we use it.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('frontend/assets/img/logo.png') }}">
+
     <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
     <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 

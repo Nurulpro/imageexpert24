@@ -10,6 +10,32 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Imageexpert24">
+    <meta property="og:title" content="About Us | Imageexpert24">
+    <meta property="og:description" content="Imageexpert24 is a Bangladesh-based photo editing studio working 24/7 to deliver clipping path, image manipulation, background removal and retouching for e-commerce and creative businesses worldwide.">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('frontend/assets/img/logo.png') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Imageexpert24">
+    <meta name="twitter:description" content="Imageexpert24 is a Bangladesh-based photo editing studio working 24/7 to deliver clipping path, image manipulation, background removal and retouching for e-commerce and creative businesses worldwide.">
+    <meta name="twitter:image" content="{{ asset('frontend/assets/img/logo.png') }}">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+        { "@type": "ListItem", "position": 2, "name": "About Us", "item": "{{ url()->current() }}" }
+      ]
+    }
+    </script>
+
     <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
     <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
