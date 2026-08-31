@@ -1,0 +1,21 @@
+/*
+ * For pages NOT yet converted to Tailwind (currently: welcome.blade.php) that
+ * still include the shared header/footer partials. Deliberately omits
+ * `@tailwind base` (Preflight) — that resets heading/paragraph margins and
+ * font sizes globally, which would blow up the still-Bootstrap-styled rest
+ * of these pages. Only Tailwind's utility classes and the marketing shell's
+ * component rules (imported from _marketing-shared.css, the single source
+ * of truth also used by app.css) are included here.
+ *
+ * Compiled to public/frontend/assets/css/marketing-legacy.css via the
+ * Tailwind CLI directly (not through Vite) because this project's
+ * Vite 8 + Rolldown build fails with a "Cannot read properties of
+ * undefined (reading 'referenceId')" error whenever a second CSS entry
+ * point is added alongside resources/css/app.css. Re-run after editing
+ * this file OR _marketing-shared.css:
+ *   npx tailwindcss -i resources/css/marketing-legacy.css -o public/frontend/assets/css/marketing-legacy.css --minify
+ */
+@import "./_marketing-shared.css";
+
+@tailwind components;
+@tailwind utilities;

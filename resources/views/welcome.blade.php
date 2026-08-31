@@ -55,10 +55,6 @@
   <link href="{{asset('frontend/assets/img/favicon.jpg')}}" rel="icon">
   <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -71,12 +67,18 @@
   <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- notification allert -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('frontend/assets/vendor/toastr/toastr.min.css') }}">
 
   <!-- Template Main CSS File -->
   <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
 
-
+  {{-- Styles the shared header/footer partials (partials/header.blade.php, partials/footer.blade.php)
+       now written in Tailwind. No Preflight/base reset here on purpose — this page's own
+       hero/about/services/portfolio/testimonials sections are still Bootstrap-driven
+       and untouched; Preflight would reset their heading/spacing styles. Compiled from
+       resources/css/marketing-legacy.css via the Tailwind CLI, not @vite (see that
+       file's header comment for why). --}}
+  <link href="{{ asset('frontend/assets/css/marketing-legacy.css') }}" rel="stylesheet">
 
 </head>
 
@@ -85,33 +87,33 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header">
+    <div class="mx-auto flex max-w-[1200px] items-center px-4">
 
       <div class="logo">
-        <!-- <h1 class="text-light"><a href="index.html"><span>Imageexpart24</span></a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
         <a href="{{ url('/') }}"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="Imageexpert24 logo"></a>
       </div>
 
-
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar ml-auto">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link" href="{{ URL::to('about-us') }}">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Samples</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="scrollto" href="#hero">Home</a></li>
+          <li><a href="{{ URL::to('about-us') }}">About Us</a></li>
+          <li><a class="scrollto" href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Samples</span> <x-icon.chevron-down class="h-3 w-3" /></a>
             <ul>
               <li><a href="{{URL::to('gallery') }}" target="_blank">Gallery</a></li>
               <li><a href="{{URL::to('clippingpath') }}" target="_blank">Clipping Path</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-          <li><a class="nav-link scrollto nav-cta" href="#contact">Free Trial</a></li>
+          <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="scrollto" href="#contact">Contact Us</a></li>
+          <li><a class="scrollto nav-cta" href="#contact">Free Trial</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="mobile-nav-toggle">
+          <x-icon.menu class="icon-menu-open h-7 w-7" />
+          <x-icon.x class="icon-menu-close hidden h-7 w-7" />
+        </i>
       </nav><!-- .navbar -->
 
     </div>
@@ -613,41 +615,38 @@
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
-    <div class="container">
+    <div class="mx-auto max-w-[1200px] px-4">
 
-      <div class="row no-gutters">
-        <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
-          <div class="content">
-            <h3>Imageexpert24 is an online graphics design studio</h3>
-            <p>
-              We deliver clipping path, image manipulation, background removal, masking and retouching for e-commerce sellers, product photographers and creative businesses worldwide — with fast turnaround, consistent quality and clear communication at every step.
-            </p>
+      <div class="flex flex-col items-stretch gap-10 lg:flex-row">
+        <div class="content lg:w-5/12" data-aos="fade-up">
+          <h3>Imageexpert24 is an online graphics design studio</h3>
+          <p>
+            We deliver clipping path, image manipulation, background removal, masking and retouching for e-commerce sellers, product photographers and creative businesses worldwide — with fast turnaround, consistent quality and clear communication at every step.
+          </p>
 
-            <a href="{{ URL::to('about-us') }}" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
-          </div>
-
+          <a href="{{ URL::to('about-us') }}" class="about-btn">About us <x-icon.chevron-right class="h-4 w-4" /></a>
         </div>
-        <div class="col-xl-7 d-flex align-items-stretch">
+        <div class="lg:w-7/12">
 
-          <div class="icon-boxes d-flex flex-column justify-content-center">
-            <div class="row">
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <i class='bx bx-walk'></i>
+          <div class="icon-boxes flex flex-col justify-center">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <x-icon.footprints class="h-9 w-9" />
                 <h4>Round-the-Clock Production</h4>
                 <p>Our studio runs three shifts, 24 hours a day, seven days a week, across five production levels — from junior designer to senior quality control — so your deadline is never waiting on our time zone.</p>
               </div>
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                <i class='bx bxs-photo-album'></i>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <x-icon.image class="h-9 w-9" />
                 <h4>Dedicated Support Team</h4>
                 <p>A customer support operator is on every shift to answer questions, track your files through production, and keep you updated from order to delivery.</p>
               </div>
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon"><i class="bx bxl-paypal"></i></div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><x-icon.paypal class="h-9 w-9" /></div>
                 <h4>Flexible Payment Options</h4>
                 <p>Pay the way that works for you — PayPal, Payoneer, bank transfer, debit or credit card, or cash on delivery.</p>
               </div>
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                <i class='bx bx-user-plus'></i>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                <x-icon.user-plus class="h-9 w-9" />
                 <h4>Trusted Across Industries</h4>
                 <p>We work with web developers, graphic and photo studios, catalog and magazine publishers, printing houses, advertising firms, and clothing and footwear brands worldwide.</p>
               </div>
@@ -663,44 +662,36 @@
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services">
-    <div class="container">
+    <div class="mx-auto max-w-[1200px] px-4">
 
       <div class="section-title" data-aos="fade-in" data-aos-delay="100">
         <h2>Services</h2>
         <p>Professional photo editing services, delivered fast and priced to fit your budget.</p>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up">
-            <div class="icon"><i class='bx bxs-edit'></i></div>
-            <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Editing</a></h4>
-            <p class="description">Background removal, color correction and general photo cleanup to make your images sales-ready.</p>
-          </div>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="icon-box" data-aos="fade-up">
+          <div class="icon"><x-icon.square-pen class="h-12 w-12" /></div>
+          <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Editing</a></h4>
+          <p class="description">Background removal, color correction and general photo cleanup to make your images sales-ready.</p>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class='bx bxs-crop'></i></div>
-            <h4 class="title"><a href="{{ URL::to('clippingpath') }}">Clipping Path</a></h4>
-            <p class="description">Precise pen-tool cutouts for clean, professional product edges on any background.</p>
-          </div>
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><x-icon.crop class="h-12 w-12" /></div>
+          <h4 class="title"><a href="{{ URL::to('clippingpath') }}">Clipping Path</a></h4>
+          <p class="description">Precise pen-tool cutouts for clean, professional product edges on any background.</p>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class='bx bxs-magic-wand'></i></div>
-            <h4 class="title"><a href="{{ URL::to('gallery') }}">Neck Joint</a></h4>
-            <p class="description">Seamless neck-to-body joins for ghost mannequin and flat-lay clothing photography.</p>
-          </div>
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><x-icon.wand-sparkles class="h-12 w-12" /></div>
+          <h4 class="title"><a href="{{ URL::to('gallery') }}">Neck Joint</a></h4>
+          <p class="description">Seamless neck-to-body joins for ghost mannequin and flat-lay clothing photography.</p>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class='bx bx-pen'></i></div>
-            <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Enhancement</a></h4>
-            <p class="description">Restoration and manipulation that brings old or low-quality images up to a modern standard.</p>
-          </div>
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><x-icon.pen-line class="h-12 w-12" /></div>
+          <h4 class="title"><a href="{{ URL::to('gallery') }}">Image Enhancement</a></h4>
+          <p class="description">Restoration and manipulation that brings old or low-quality images up to a modern standard.</p>
         </div>
 
       </div>
@@ -709,41 +700,33 @@
   </section><!-- End Services Section -->
 
   <!-- ======= Counts Section ======= -->
-  <section id="counts" class="counts  section-bg">
-    <div class="container">
+  <section id="counts" class="counts section-bg">
+    <div class="mx-auto max-w-[1200px] px-4">
 
-      <div class="row no-gutters">
+      <div class="grid grid-cols-2 gap-8 lg:grid-cols-4">
 
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p><strong>Happy Clients</strong></p>
-          </div>
+        <div class="count-box">
+          <x-icon.smile class="h-11 w-11" />
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Happy Clients</strong></p>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p><strong>Projects</strong></p>
-          </div>
+        <div class="count-box">
+          <x-icon.book-text class="h-11 w-11" />
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects</strong></p>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p><strong>Hours Of Support</strong></p>
-          </div>
+        <div class="count-box">
+          <x-icon.headset class="h-11 w-11" />
+          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours Of Support</strong></p>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-          <div class="count-box">
-            <i class="bi bi-people"></i>
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p><strong>Hard Workers</strong></p>
-          </div>
+        <div class="count-box">
+          <x-icon.users class="h-11 w-11" />
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hard Workers</strong></p>
         </div>
 
       </div>
@@ -997,186 +980,156 @@
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact section-bg">
-    <div class="container" data-aos="fade-up">
+    <div class="mx-auto max-w-[1200px] px-4" data-aos="fade-up">
 
       <div class="section-title">
         <h2>Contact</h2>
         <p>Imageexpert24 is giving best service 24 hours tarn around time. We give service with quickly, in time, quality with affordable price. So contact with us within short time.</p>
       </div>
 
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 
-
-      <div class="row">
-
-
-        <div class="col-lg-6">
-
-          <div class="card-body">
-
-
-            <form method="POST" action="{{route('contact-form.store') }}">
-
-              {{ csrf_field() }}
-              <div class="card-header bg-info" style="text-align: center;">
-                <h3 class="text-white">Contact Us</h3>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control"  value="{{ old('name') }}">
-                    @if ($errors->has('name'))
-                    <span class="text-danger">{{ $errors->first('name') }}</span>
-                    @endif
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <strong>Email:</strong>
-                    <input type="text" name="email" class="form-control"  value="{{ old('email') }}">
-                    @if ($errors->has('email'))
-                    <span class="text-danger">{{ $errors->first('email') }}</span>
-                    @endif
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <strong>Phone:</strong>
-                    <input type="text" name="phone" class="form-control"  value="{{ old('phone') }}">
-                    @if ($errors->has('phone'))
-                    <span class="text-danger">{{ $errors->first('phone') }}</span>
-                    @endif
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <strong>Subject:</strong>
-                    <input type="text" name="subject" class="form-control"  value="{{ old('subject') }}">
-                    @if ($errors->has('subject'))
-                    <span class="text-danger">{{ $errors->first('subject') }}</span>
-                    @endif
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <strong>Message:</strong>
-                    <textarea name="message" rows="9" placeholder="Write your details heare" class="form-control">{{ old('message') }}</textarea>
-                    @if ($errors->has('message'))
-                    <span class="text-danger">{{ $errors->first('message') }}</span>
-                    @endif
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group text-center">
-                <button class="btn btn-success btn-submit">Send</button>
-              </div>
-            </form>
+        <div class="contact-card">
+          <div class="contact-card-header bg-brand-navy">
+            <x-icon.mail class="h-5 w-5" />
+            <h3>Contact Us</h3>
           </div>
+
+          <form method="POST" action="{{route('contact-form.store') }}" class="contact-card-body">
+
+            {{ csrf_field() }}
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div>
+                <label class="form-label">Name:</label>
+                <input type="text" name="name" class="form-input" value="{{ old('name') }}">
+                @if ($errors->has('name'))
+                <span class="form-error">{{ $errors->first('name') }}</span>
+                @endif
+              </div>
+              <div>
+                <label class="form-label">Email:</label>
+                <input type="text" name="email" class="form-input" value="{{ old('email') }}">
+                @if ($errors->has('email'))
+                <span class="form-error">{{ $errors->first('email') }}</span>
+                @endif
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div>
+                <label class="form-label">Phone:</label>
+                <input type="text" name="phone" class="form-input" value="{{ old('phone') }}">
+                @if ($errors->has('phone'))
+                <span class="form-error">{{ $errors->first('phone') }}</span>
+                @endif
+              </div>
+              <div>
+                <label class="form-label">Subject:</label>
+                <input type="text" name="subject" class="form-input" value="{{ old('subject') }}">
+                @if ($errors->has('subject'))
+                <span class="form-error">{{ $errors->first('subject') }}</span>
+                @endif
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label class="form-label">Message:</label>
+              <textarea name="message" rows="9" placeholder="Write your details heare" class="form-input">{{ old('message') }}</textarea>
+              @if ($errors->has('message'))
+              <span class="form-error">{{ $errors->first('message') }}</span>
+              @endif
+            </div>
+
+            <div class="mt-6 text-center">
+              <button class="btn-submit">Send <x-icon.send class="h-4 w-4" /></button>
+            </div>
+          </form>
 
         </div>
 
-        <div class="col-lg-6 ">
-          <div class="card-body">
-
-            <form method="post" action="{{route('FreeTrial.store') }}" enctype="multipart/form-data">
-              {{ csrf_field() }}
-              <div class="card-header bg-primary" style="text-align: center;">
-                <h3 class="text-white">Free Trial</h3>
-              </div>
-              <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" required="">
-              </div>
-              <div class="form-group">
-                <strong>Email:</strong>
-                <input type="email" name="email" class="form-control" required="">
-              </div>
-              <div class="form-group">
-                <strong>Subject:</strong>
-                <input type="text" name="subject" class="form-control" required="">
-              </div>
-              <div class="form-group">
-                <strong>Message:</strong>
-                <textarea name="message" class="form-control" required=""></textarea>
-              </div>
-              <div class="form-group">
-                <strong>Chose Your File:</strong>
-                <input type="file" name="attachment" class="form-control">
-              </div>
-              <div class="form-group text-center">
-                <button class="btn btn-success btn-submit">Submit</button>
-              </div>
-              
-            </form>
-
+        <div class="contact-card">
+          <div class="contact-card-header bg-brand-accent">
+            <x-icon.gift class="h-5 w-5" />
+            <h3>Free Trial</h3>
           </div>
-        </div>
 
+          <form method="post" action="{{route('FreeTrial.store') }}" enctype="multipart/form-data" class="contact-card-body">
+            {{ csrf_field() }}
+            <div class="mb-4">
+              <label class="form-label">Name:</label>
+              <input type="text" name="name" class="form-input" required="">
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Email:</label>
+              <input type="email" name="email" class="form-input" required="">
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Subject:</label>
+              <input type="text" name="subject" class="form-input" required="">
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Message:</label>
+              <textarea name="message" class="form-input" required=""></textarea>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Chose Your File:</label>
+              <input type="file" name="attachment" class="form-input">
+            </div>
+            <div class="text-center">
+              <button class="btn-submit">Submit <x-icon.send class="h-4 w-4" /></button>
+            </div>
 
+          </form>
 
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="info-box mb-4">
-            <i class='bx bx-map'></i>
-            <h3>USA address
-
-            </h3><br>
-            <p>
-              USA address
-              3031 fredna place,
-              midland, texas 79707
-              USA
-              Mobile Number: 0015127439457
-              Email: Info@imageexpert24.com
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="info-box  mb-4">
-            <i class='bx bxs-map-pin'></i>
-            <h3>Europe Address</h3>
-            <p>
-              14 rue Gabriel peri
-              1er etage
-              st-Denis-93200
-              Paris, France
-              Mob:0033652101391
-              Email:info@imageexpert24.com
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="info-box  mb-4">
-            <i class='bx bxs-map-pin'></i>
-            <h3>Bangladesh address</h3>
-            <p>
-
-              385/7,N.S. Road,
-              East Rampura,Banasree
-              Dhaka-1219, Bangladesh
-              Mobile: 01921020187
-              Email: info@imageexpert24.com
-            </p>
-          </div>
         </div>
 
       </div>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" style="width: 100%; height: 450px; border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12">
+        <div class="info-box lg:col-span-6">
+          <x-icon.map-pin class="h-8 w-8" />
+          <h3>USA address</h3>
+          <p>
+            USA address
+            3031 fredna place,
+            midland, texas 79707
+            USA
+            Mobile Number: 0015127439457
+            Email: Info@imageexpert24.com
+          </p>
         </div>
+
+        <div class="info-box lg:col-span-3">
+          <x-icon.map-pin class="h-8 w-8" />
+          <h3>Europe Address</h3>
+          <p>
+            14 rue Gabriel peri
+            1er etage
+            st-Denis-93200
+            Paris, France
+            Mob:0033652101391
+            Email:info@imageexpert24.com
+          </p>
+        </div>
+
+        <div class="info-box lg:col-span-3">
+          <x-icon.map-pin class="h-8 w-8" />
+          <h3>Bangladesh address</h3>
+          <p>
+            385/7,N.S. Road,
+            East Rampura,Banasree
+            Dhaka-1219, Bangladesh
+            Mobile: 01921020187
+            Email: info@imageexpert24.com
+          </p>
+        </div>
+
       </div>
+
+      <div class="mt-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27064.885872956405!2d-102.14443399999998!3d32.01211399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fbd96c4113b0ff%3A0xe0363e7033025842!2s3031%20Fredna%20Pl%2C%20Midland%2C%20TX%2079707!5e0!3m2!1sen!2sus!4v1617864785815!5m2!1sen!2sus" style="width: 100%; height: 450px; border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
   </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -1191,7 +1144,7 @@
 
 
   <!-- jQuery (must load before toastr, which depends on it) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{{ asset('frontend/assets/vendor/jquery/jquery.min.js') }}"></script>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
@@ -1205,16 +1158,10 @@
   <!-- Template Main JS File -->
   <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script type="text/javascript" src="{{ asset('frontend/assets/vendor/toastr/toastr.min.js') }}"></script>
 
   <!-- for sweet alert  -->
-
-
-
-  <script src="{{asset('https://unpkg.com/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{{ asset('frontend/assets/vendor/sweetalert2/sweetalert2.min.js') }}"></script>
 
 
   <style>

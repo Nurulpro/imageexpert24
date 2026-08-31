@@ -21,77 +21,13 @@
     <link href="{{asset('frontend/assets/img/logo2.jpg')}}" rel="apple-touch-icon">
 
     <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
-    <style>
-        .legal-content h2 {
-            font-size: 22px;
-            font-weight: 700;
-            color: #2f4d5a;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            padding-top: 20px;
-            border-top: 1px solid #eef2f4;
-        }
-        .legal-content h2:first-child {
-            margin-top: 0;
-            padding-top: 0;
-            border-top: none;
-        }
-        .legal-content p,
-        .legal-content li {
-            color: #444;
-            line-height: 1.8;
-        }
-        .legal-content ul {
-            padding-left: 20px;
-        }
-        .legal-content .updated {
-            color: #6c757d;
-            font-size: 14px;
-        }
-        .legal-section {
-            overflow: visible;
-        }
-        .toc-nav {
-            position: sticky;
-            top: 134px;
-            padding: 20px 0 20px 20px;
-            border-left: 2px solid #eef2f4;
-        }
-        .toc-nav .toc-title {
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #6c757d;
-            margin-bottom: 10px;
-        }
-        .toc-nav .nav-link {
-            padding: 6px 0;
-            font-size: 14px;
-            color: #444;
-            border-left: 2px solid transparent;
-            margin-left: -22px;
-            padding-left: 20px;
-        }
-        .toc-nav .nav-link:hover {
-            color: #67b0d1;
-        }
-        .toc-nav .nav-link.active {
-            color: #67b0d1;
-            font-weight: 600;
-            border-left-color: #67b0d1;
-        }
-    </style>
+    @vite(['resources/css/app.css'])
 </head>
-<body style="padding-top: 114px;" data-bs-spy="scroll" data-bs-target="#toc-nav" data-bs-offset="140" tabindex="0">
+<body class="font-body pt-[114px] text-body" data-bs-spy="scroll" data-bs-target="#toc-nav" data-bs-offset="140" tabindex="0">
     @include('partials.header')
 
     <div class="breadcrumbs">
-        <div class="container d-lg-flex justify-content-between align-items-center">
+        <div class="mx-auto max-w-[1200px] px-4 lg:flex lg:items-center lg:justify-between">
             <h2>Privacy Policy</h2>
             <ol>
                 <li><a href="{{ url('/') }}">Home</a></li>
@@ -100,29 +36,29 @@
         </div>
     </div>
 
-    <section class="legal-section">
-        <div class="container">
-            <div class="row">
+    <section class="legal-section overflow-visible">
+        <div class="mx-auto max-w-[1200px] px-4">
+            <div class="lg:flex lg:gap-8">
 
-                <div class="col-lg-3 d-none d-lg-block">
+                <div class="hidden lg:block lg:w-3/12">
                     <nav id="toc-nav" class="toc-nav">
                         <div class="toc-title">On This Page</div>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="#consent">Consent</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#information-we-collect">Information We Collect</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#how-we-use-your-information">How We Use Your Information</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#log-files">Log Files</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#advertising-partners">Advertising Partners</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#third-party-privacy-policies">Third-Party Policies</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#ccpa-privacy-rights">CCPA Privacy Rights</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gdpr-data-protection-rights">GDPR Rights</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#childrens-information">Children's Information</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                        <ul class="flex flex-col list-none pl-0">
+                            <li><a class="nav-link" href="#consent">Consent</a></li>
+                            <li><a class="nav-link" href="#information-we-collect">Information We Collect</a></li>
+                            <li><a class="nav-link" href="#how-we-use-your-information">How We Use Your Information</a></li>
+                            <li><a class="nav-link" href="#log-files">Log Files</a></li>
+                            <li><a class="nav-link" href="#advertising-partners">Advertising Partners</a></li>
+                            <li><a class="nav-link" href="#third-party-privacy-policies">Third-Party Policies</a></li>
+                            <li><a class="nav-link" href="#ccpa-privacy-rights">CCPA Privacy Rights</a></li>
+                            <li><a class="nav-link" href="#gdpr-data-protection-rights">GDPR Rights</a></li>
+                            <li><a class="nav-link" href="#childrens-information">Children's Information</a></li>
+                            <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="col-lg-9 legal-content">
+                <div class="legal-content lg:w-9/12">
 
                     <p class="updated">Last updated: {{ date('F j, Y') }}</p>
 
@@ -203,9 +139,9 @@
     @include('partials.footer')
 
     <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-    <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script><!-- kept for data-bs-spy scrollspy on the TOC below -->
+    <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script><!-- main.js inits GLightbox unconditionally on every page -->
+    <script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script><!-- main.js inits Swiper unconditionally on every page -->
     <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 </body>
 </html>
