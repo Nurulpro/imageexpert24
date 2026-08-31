@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactFormController as AdminContactFormController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\SubscriberController as AdminSubscriberController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SubscriberController;
@@ -9,9 +12,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.home');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -52,11 +55,9 @@ Route::post('/subscriber', [SubscriberController::class, 'storesubscriber'])->na
 // Admin panel (auth-gated)
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/SubscriberList', function () {
-        return view('admin.subscriber');
-    });
+    Route::get('/SubscriberList', [AdminSubscriberController::class, 'index'])->name('admin.subscribers.index');
+    Route::delete('/SubscriberList/{subscriber}', [AdminSubscriberController::class, 'destroy'])->name('admin.subscribers.destroy');
 
-    Route::get('/ContactForms', function () {
-        return view('admin.ContactForms');
-    });
+    Route::get('/ContactForms', [AdminContactFormController::class, 'index'])->name('admin.contact-forms.index');
+    Route::delete('/ContactForms/{contact}', [AdminContactFormController::class, 'destroy'])->name('admin.contact-forms.destroy');
 });
