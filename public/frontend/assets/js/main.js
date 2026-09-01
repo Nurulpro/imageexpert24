@@ -168,6 +168,17 @@
         percentPosition: true
       });
 
+      // Re-layout as lazy-loaded (loading="lazy") images finish downloading —
+      // Isotope's initial layout runs on window 'load', which fires before
+      // any not-yet-visible lazy images have loaded, so their height is
+      // miscalculated and later items overlap following content.
+      portfolioContainer.querySelectorAll('img').forEach(function(img) {
+        if (img.complete) return;
+        img.addEventListener('load', function() {
+          portfolioIsotope.layout();
+        });
+      });
+
       let portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function(e) {
