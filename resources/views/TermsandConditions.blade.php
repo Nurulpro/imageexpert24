@@ -28,6 +28,13 @@
 <body class="font-body pt-[114px] text-body" data-bs-spy="scroll" data-bs-target="#toc-nav" data-bs-offset="140" tabindex="0">
     @include('partials.header')
 
+    <div class="terms-hero">
+        <div class="mx-auto max-w-[1200px] px-4">
+            <h1>Terms and Conditions</h1>
+            <p>Please read these terms carefully before using Imageexpert24's photo editing services.</p>
+        </div>
+    </div>
+
     <div class="breadcrumbs">
         <div class="mx-auto max-w-[1200px] px-4 lg:flex lg:items-center lg:justify-between">
             <h2>Terms and Conditions</h2>

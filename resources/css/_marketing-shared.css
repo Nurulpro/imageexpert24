@@ -434,6 +434,21 @@
   .about-hero p {
     @apply mx-auto max-w-[640px] font-body text-base text-[#e6eef1];
   }
+
+  /* PrivacyPolicy.blade.php / TermsandConditions.blade.php — same treatment as .about-hero */
+  .privacy-hero,
+  .terms-hero {
+    @apply bg-cover bg-center py-[70px] text-center;
+    background-image: linear-gradient(rgba(47, 77, 90, 0.85), rgba(47, 77, 90, 0.85)), url("/frontend/assets/img/portfolio/Clipping Path1.jpg");
+  }
+  .privacy-hero h1,
+  .terms-hero h1 {
+    @apply mb-3 font-heading text-[30px] font-bold text-white;
+  }
+  .privacy-hero p,
+  .terms-hero p {
+    @apply mx-auto max-w-[640px] font-body text-base text-[#e6eef1];
+  }
   .story-section p {
     @apply font-body text-base leading-[1.9] text-body;
   }
